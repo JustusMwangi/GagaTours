@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Elevated Explorer | Luxury Safari Curators</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-container": "#baaa79",
+              "secondary-fixed-dim": "#ffb77d",
+              "surface-dim": "#dcd9d9",
+              "secondary-container": "#fe932c",
+              "primary-fixed-dim": "#adcfae",
+              "surface-container-low": "#f6f3f2",
+              "on-error": "#ffffff",
+              "tertiary-fixed": "#f3e2ac",
+              "on-primary-fixed-variant": "#2f4d34",
+              "tertiary": "#6a5e33",
+              "surface-tint": "#47664b",
+              "surface-container-high": "#eae7e7",
+              "on-primary-container": "#98ba9a",
+              "on-primary": "#ffffff",
+              "outline-variant": "#c2c8bf",
+              "outline": "#737971",
+              "tertiary-fixed-dim": "#d6c692",
+              "secondary-fixed": "#ffdcc3",
+              "on-secondary": "#ffffff",
+              "on-error-container": "#93000a",
+              "on-tertiary-fixed-variant": "#51461e",
+              "on-secondary-container": "#663500",
+              "inverse-on-surface": "#f3f0ef",
+              "on-secondary-fixed": "#2f1500",
+              "on-tertiary-fixed": "#231b00",
+              "on-surface-variant": "#424842",
+              "background": "#fcf9f8",
+              "inverse-primary": "#adcfae",
+              "error-container": "#ffdad6",
+              "surface-bright": "#fcf9f8",
+              "on-tertiary-container": "#493e17",
+              "surface-container-highest": "#e4e2e1",
+              "primary-fixed": "#c8ecc9",
+              "secondary": "#904d00",
+              "on-surface": "#1b1c1c",
+              "on-primary-fixed": "#03210c",
+              "error": "#ba1a1a",
+              "primary": "#17341d",
+              "surface-variant": "#e4e2e1",
+              "surface": "#fcf9f8",
+              "surface-container": "#f0eded",
+              "on-tertiary": "#ffffff",
+              "inverse-surface": "#303030",
+              "primary-container": "#2d4b32",
+              "on-secondary-fixed-variant": "#6e3900",
+              "on-background": "#1b1c1c",
+              "surface-container-lowest": "#ffffff"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-glass {
+            background-color: rgba(252, 249, 248, 0.8);
+            backdrop-filter: blur(20px);
+        }
+        .primary-gradient {
+            background: linear-gradient(135deg, #17341d 0%, #2d4b32 100%);
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #fcf9f8;
+            color: #1b1c1c;
+        }
+        h1, h2, h3, .font-serif {
+            font-family: 'Noto Serif', serif;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fcf9f8]/80 backdrop-blur-xl">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 py-6">
+<div class="text-2xl font-serif italic text-[#17341d]">The Elevated Explorer</div>
+<div class="hidden md:flex items-center space-evenly gap-12">
+<a class="text-[#17341d] border-b-2 border-[#904d00] pb-1 font-label tracking-wider" href="#">Destinations</a>
+<a class="text-[#1b1c1c]/70 hover:text-[#17341d] transition-all duration-300 font-label tracking-wider" href="#">Tours</a>
+<a class="text-[#1b1c1c]/70 hover:text-[#17341d] transition-all duration-300 font-label tracking-wider" href="#">Our Story</a>
+<a class="text-[#1b1c1c]/70 hover:text-[#17341d] transition-all duration-300 font-label tracking-wider" href="#">Journal</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined text-[#17341d]">account_circle</button>
+<button class="primary-gradient text-white px-8 py-3 rounded-xl font-medium scale-95 hover:scale-100 duration-200 ease-in-out">Book Now</button>
+</div>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative h-screen min-h-[800px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Majestic elephant in the Serengeti at sunset" class="w-full h-full object-cover" data-alt="Majestic elephant walking through golden savannah sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAD0m8X61ph3DgBBwqp_Z68iN-u5ubQdIpjCDEe5u73rrsOphEkyv3mKmg914xQeymu1-R4pakb9cMkHX9QAOcqoI0d-85yK5LR_t0akhdxzh3wmzp48nJwxV5M29SDVlL0iB48R02Jz8cv_QrFxNlW4A5n1MRpCF3ahj-8aX284cIoPW1XcG_2UgdpZSSybSqcfkP_cq0Y4V2w9futWhIfiUwflxMvwXHpEm2b_O4EwrG_yckEIdWVgFzNuBxT7wDi3nT_SPdGtGr"/>
+<div class="absolute inset-0 bg-black/20"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
+<div class="max-w-3xl">
+<span class="inline-block text-white font-label uppercase tracking-widest mb-6 opacity-90">Experience the Untamed</span>
+<h1 class="text-white text-6xl md:text-8xl font-headline leading-tight mb-12">Chasing the Serengeti Horizon</h1>
+</div>
+<!-- Floating Booking Widget -->
+<div class="bg-glass p-8 md:p-10 rounded-xl max-w-5xl shadow-[0_20px_40px_rgba(27,28,28,0.06)]">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="flex flex-col gap-2">
+<label class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Destination</label>
+<div class="flex items-center gap-3 bg-surface-container-highest p-4 rounded-lg">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<input class="bg-transparent border-none focus:ring-0 text-on-surface font-medium w-full" placeholder="Where to?" type="text"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Arrival</label>
+<div class="flex items-center gap-3 bg-surface-container-highest p-4 rounded-lg">
+<span class="material-symbols-outlined text-primary">calendar_today</span>
+<input class="bg-transparent border-none focus:ring-0 text-on-surface font-medium w-full" placeholder="Check in" type="text"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Guests</label>
+<div class="flex items-center gap-3 bg-surface-container-highest p-4 rounded-lg">
+<span class="material-symbols-outlined text-primary">group</span>
+<select class="bg-transparent border-none focus:ring-0 text-on-surface font-medium w-full appearance-none">
+<option>2 Explorers</option>
+<option>4 Explorers</option>
+<option>Private Group</option>
+</select>
+</div>
+</div>
+<div class="flex items-end">
+<button class="w-full primary-gradient text-white py-4 rounded-lg font-semibold flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
+                                Find Journeys
+                                <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Collections -->
+<section class="py-24 bg-surface px-8">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
+<div class="max-w-2xl">
+<h2 class="text-4xl md:text-5xl font-headline text-primary mb-6">Curated Expeditions</h2>
+<p class="text-lg text-on-surface-variant font-body">Not just travels, but narratives. Each package is designed to immerse you in the quiet grandeur of the African wilderness.</p>
+</div>
+<a class="text-secondary font-headline italic border-b border-secondary pb-1 flex items-center gap-2 group" href="#">
+                        View All Collections 
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-10">
+<!-- Featured Card Large -->
+<div class="md:col-span-8 group relative overflow-hidden rounded-xl bg-surface-container-low p-2">
+<div class="aspect-[16/10] overflow-hidden rounded-lg">
+<img alt="The Great Migration" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Aerial view of wildebeest migration across river" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzHzisPBmzdL1MlMtwb1-Ozq3iXwSJmYs4hePI6JRUXoEpvDOubAclWKjrUurjOica_HSY4W3iZzJl1GaGZuysauJObwJ3p-j6sdhA5KEF9dpnGW4pVjrR26LiPhfkuDtj3uViKW0dB3Ydw09ZZYVnZR3_iUqxTC6xtjasSXdSgzPzJzgKhG8hbpoMFV_RTEMzy3C1e8Jh_4ZxNOs_OO6EWoBoEvWYFd1xvY_85oc9Bg-dMKdcAYM4KWSHKMlbSPnd0ChVg99av9qJ"/>
+</div>
+<div class="mt-8 px-6 pb-6">
+<div class="flex justify-between items-start mb-4">
+<div>
+<span class="text-secondary font-label uppercase text-xs tracking-widest">Seasonal Event</span>
+<h3 class="text-3xl font-headline text-primary mt-2">The Great Migration Fly-In</h3>
+</div>
+<div class="text-right">
+<p class="text-on-surface-variant text-sm">Starts from</p>
+<p class="text-xl font-semibold text-primary">$12,400 <span class="text-sm font-normal">/pp</span></p>
+</div>
+</div>
+<p class="text-on-surface-variant mb-6 max-w-xl">Witness the world's most dramatic wildlife spectacle from private light aircraft and exclusive mobile camps following the herds.</p>
+<div class="flex gap-4">
+<span class="flex items-center gap-1 text-sm bg-surface-container-highest px-3 py-1 rounded-full"><span class="material-symbols-outlined text-base">schedule</span> 12 Days</span>
+<span class="flex items-center gap-1 text-sm bg-surface-container-highest px-3 py-1 rounded-full"><span class="material-symbols-outlined text-base">explore</span> Maasai Mara</span>
+</div>
+</div>
+</div>
+<!-- Side Grid Items -->
+<div class="md:col-span-4 flex flex-col gap-10">
+<div class="group cursor-pointer">
+<div class="aspect-square overflow-hidden rounded-xl mb-4">
+<img alt="Okavango Delta" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Dusk over the Okavango Delta waterways" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7EU8GTwMzqX42m-E0QRlqJQN3NP48VM_qEUcqE35ByBtUS0iaglevzQwvcaWhaPAohAbc8nECpKrewJ4GCIu0s50K2Xm72Egoce-xWwXQ4o_Fe-8BeM3tw4BSsotzI_8GClEz4IupZy4dhey1cRbNDGEBOmHUZFMJjKoxjR04EncF9GO10JlQB6rsgraaKFkYWaSEaSNH119EvsYkH7sjzkufv66XFgK8gp41xLfZTe_xoCQJ-fU3yNwrjylXDMsyIzvVVskVVsCc"/>
+</div>
+<h4 class="text-xl font-headline text-primary">Okavango Water Wilderness</h4>
+<p class="text-on-surface-variant text-sm mt-2">Mokoro safaris and hidden island camps.</p>
+</div>
+<div class="group cursor-pointer">
+<div class="aspect-square overflow-hidden rounded-xl mb-4">
+<img alt="Cape Town &amp; Kruger" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Luxury lodge overlooking a watering hole" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCIrJ9FjR2lqCTHbtKtkaJIeLT2hsz3XqhRg4D8mIUi0jByHu8sJpoOKIwlu11IL5h3fiYN83P06lzgeabJjm5rVaxiHPgkSeJACFWUii5H7waHTiOGqt5wuScYHUuZnKa8uhTxEWlERwN6XW4blHSRuwVpLrWcTSLOUaWdezhD5ox0oVl38CjvXpeCPPCVDeTWF4XJAfPMwa4kWRlY2673XcjcjqbZcXgvgGIqyKuQikCLfmzZ789LhK1zzT8QYxDS7DBZYmPcE0v"/>
+</div>
+<h4 class="text-xl font-headline text-primary">Coastal Peaks &amp; Big Five</h4>
+<p class="text-on-surface-variant text-sm mt-2">The ultimate South African duality.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Signature Experience (Asymmetric Layout) -->
+<section class="py-24 bg-surface-container-low overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 relative">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div class="relative z-10">
+<span class="text-secondary font-label uppercase tracking-widest block mb-4">The Curator's Touch</span>
+<h2 class="text-5xl md:text-6xl font-headline text-primary mb-8 leading-tight">Quiet Luxury in the Heart of the Wild</h2>
+<div class="space-y-6 text-on-surface-variant text-lg leading-relaxed">
+<p>We believe travel is an art form. Our curators don't just book rooms; they architect moments that linger long after the dust has settled.</p>
+<p>From private candle-lit dinners under the canopy of an ancient Baobab to tracking the elusive leopard with the continent's finest guides, we provide access to the inaccessible.</p>
+</div>
+<div class="mt-12 flex flex-col gap-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-white">
+<span class="material-symbols-outlined">verified_user</span>
+</div>
+<div>
+<h5 class="font-bold text-primary">Certified Ethical Guiding</h5>
+<p class="text-sm text-on-surface-variant">Supporting conservation through tourism.</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-white">
+<span class="material-symbols-outlined">flight_takeoff</span>
+</div>
+<div>
+<h5 class="font-bold text-primary">Seamless Logistical Support</h5>
+<p class="text-sm text-on-surface-variant">Private transfers and 24/7 concierge.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<!-- Asymmetric Image Layout -->
+<div class="relative aspect-[4/5] rounded-xl overflow-hidden shadow-2xl z-20">
+<img alt="Luxury Safari Tent" class="w-full h-full object-cover" data-alt="Interior of a luxury safari tent with view of plains" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAI5MppdPW4WSrC8tEtF9_TpOx1N1ouT9jxsS0CcwoZEz6kZi8H22-aU3dbkPyhYbRNvQbA6BqkQZSYom_YwquGOHqS-lpQe1y_x56JPbsMTv2B4xEBHDfNHm09w4vD_lfqq8dLIlS3FojrxlSpmaxI3e-_Hg9BneBzm6SeCIb7weY5tBA6EoOIgVV2nO-d30QBPh82IcPJjHhssQ4K6oKDr1-081bc7I5gU_b8U65_Bu89nRNkK0EyC0JxHJcBwTrfrM1I7yeMa9sB"/>
+</div>
+<div class="absolute -bottom-10 -right-10 w-2/3 aspect-square rounded-xl overflow-hidden shadow-xl z-30 border-8 border-surface-container-low hidden md:block">
+<img alt="Wildlife up close" class="w-full h-full object-cover" data-alt="Close up of a lioness in the grass" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnBKSnb5ItahYyKsLwAbXVFrhpmJ7T4YMrJDBppgsmL5y6ZJSv2PlBTp5b4lTBWms21A2sjyc92yd_R7PTYRh19tElfIfv7PFFYcEtcvBvCANHaCGUX83Ekk5N4zFg53TaGVCTfgLQkMFeiRo_CA8vr7oov0JXl-LcsF2m8_6nzYhtqOyLwVGq3ST_5CU27qp2NlAV6ONxtcHcATyqLnN7gw63Q-fR8iDmXD7FxSIuT3_P_VZffD4xsi42UD1nVr9n-4ZDCbwBjCXZ"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-headline text-primary">Echoes from the Savannah</h2>
+<p class="text-on-surface-variant mt-4">Voices of those who journeyed with us.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="bg-surface-container-lowest p-10 rounded-xl relative">
+<span class="material-symbols-outlined text-4xl text-tertiary-container absolute -top-4 left-6">format_quote</span>
+<p class="italic text-on-surface leading-relaxed mb-8">"Beyond any expectation. The level of detail in our Tanzanian itinerary made us feel like we were the only explorers on the continent."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-dim overflow-hidden">
+<img alt="Client" data-alt="Portrait of a male traveler" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBy_AGapnsaZX61EzXgGj4OnlV4fwKGWcrF6L6yZ73JeUWayDJ_MpX1INluSNb53Y3HaOyboIom7u2nJiV4l7fbyLBlTRVH7z-ukJaaOgO26QX5lfuStcw2OlJN_hCijT6kOPi1nbE5OBs7s63WE9VIxo8GppdaODY0uQrjYPZeOuQSPa77qarIri19zBAIRva2i2tkbT8pAmmjMpQX94krw6VN3I6rV4qI48HqA3-oI9eGTZ8ewiefXvRz1C1ephpJeNxlL1VWZDVP"/>
+</div>
+<div>
+<h6 class="font-bold text-primary">Julian Thorne</h6>
+<p class="text-xs font-label uppercase text-on-surface-variant tracking-widest">London, UK</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-xl relative">
+<span class="material-symbols-outlined text-4xl text-tertiary-container absolute -top-4 left-6">format_quote</span>
+<p class="italic text-on-surface leading-relaxed mb-8">"The conservation focus was what drew us to Elevated Explorer. Seeing the impact of our visit firsthand was truly life-changing."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-dim overflow-hidden">
+<img alt="Client" data-alt="Portrait of a female traveler" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlGSkfaTe1g4V0cQIeKetpWsLZPYYvBPrxX5Rf6HQOeiGnQDtgqXei1fdVtxWeZRcwwxO_hVLBYevOuoMCbhYIxMp94VUmwRpAPXhzzNotPPlMGeUtdW-s4vuzuCbgyhsYZhmd7bgZMtioUf40E1jGhdqV_AkiuMc7V2XVzZ2KGtmmCg38gOq3i9z9OWKn53zxL3YbVWzyOI4syWRtZhFIhPdKUSKkd6J6MaBmPkSIMMs4aQd91BB_TVLl_yfCCbtRCAoQIOXunUgi"/>
+</div>
+<div>
+<h6 class="font-bold text-primary">Sarah Jenkins</h6>
+<p class="text-xs font-label uppercase text-on-surface-variant tracking-widest">San Francisco, USA</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-xl relative">
+<span class="material-symbols-outlined text-4xl text-tertiary-container absolute -top-4 left-6">format_quote</span>
+<p class="italic text-on-surface leading-relaxed mb-8">"Absolute perfection. The Botswana private camp was the most peaceful place I have ever experienced. A masterpiece of curation."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-dim overflow-hidden">
+<img alt="Client" data-alt="Portrait of a professional traveler" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATawK_e95khcXjPL6863eiAqFaANv4Nbv4eTEOL7KcQwy-hOcMsiajIwHhsIODrbaTra4L31HQM4DemIqe5XiLoVUDxfVZ0bHmsCUSR7Cwkx5rr2OJrEkXZ86Zzil0yCOkgBLPbZB3o5kVGuY-YFr0IrsNlHm3ZDQ2mvdYopYb-MEnhDFPjDkKjq7dSCMQcd7A1am3IaaCXV1LLXKTlR2aEGcuYADeCX5c3SEXfh3onl0q9vHyU9WPZT2SGU3nQfc3d2EeSXxi9XO4"/>
+</div>
+<div>
+<h6 class="font-bold text-primary">Markus Weber</h6>
+<p class="text-xs font-label uppercase text-on-surface-variant tracking-widest">Berlin, Germany</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-20 pb-10 bg-[#f6f3f2]">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 max-w-7xl mx-auto px-8">
+<div class="flex flex-col gap-6">
+<div class="text-xl font-serif text-[#17341d]">The Elevated Explorer</div>
+<p class="text-on-surface-variant text-sm leading-relaxed">Crafting immersive wildlife experiences for the modern curator. We bridge the gap between luxury and raw wilderness.</p>
+<div class="flex gap-4">
+<a class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center hover:bg-primary hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">public</span>
+</a>
+<a class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center hover:bg-primary hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">mail</span>
+</a>
+</div>
+</div>
+<div class="flex flex-col gap-6">
+<h6 class="font-label uppercase tracking-widest text-primary text-sm">Destinations</h6>
+<ul class="flex flex-col gap-3">
+<li><a class="text-[#1b1c1c]/60 hover:text-[#17341d] transition-colors text-sm uppercase tracking-widest" href="#">Tanzania</a></li>
+<li><a class="text-[#1b1c1c]/60 hover:text-[#17341d] transition-colors text-sm uppercase tracking-widest" href="#">Botswana</a></li>
+<li><a class="text-[#1b1c1c]/60 hover:text-[#17341d] transition-colors text-sm uppercase tracking-widest" href="#">Namibia</a></li>
+<li><a class="text-[#1b1c1c]/60 hover:text-[#17341d] transition-colors text-sm uppercase tracking-widest" href="#">Rwanda</a></li>
+</ul>
+</div>
+<div class="flex flex-col gap-6">
+<h6 class="font-label uppercase tracking-widest text-primary text-sm">Experience</h6>
+<ul class="flex flex-col gap-3">
+<li><a class="text-[#1b1c1c]/60 hover:text-[#17341d] transition-colors text-sm uppercase tracking-widest" href="#">Fly-in Safaris</a></li>
+<li><a class="text-[#1b1c1c]/60 hover:text-[#17341d] transition-colors text-sm uppercase tracking-widest" href="#">Luxury Lodges</a></li>
+<li><a class="text-[#1b1c1c]/60 hover:text-[#17341d] transition-colors text-sm uppercase tracking-widest" href="#">Walking Safaris</a></li>
+<li><a class="text-[#1b1c1c]/60 hover:text-[#17341d] transition-colors text-sm uppercase tracking-widest" href="#">Private Guides</a></li>
+</ul>
+</div>
+<div class="flex flex-col gap-6">
+<h6 class="font-label uppercase tracking-widest text-primary text-sm">Newsletter</h6>
+<p class="text-sm text-on-surface-variant">Curated stories from the wild, delivered monthly.</p>
+<div class="flex">
+<input class="bg-white border-none rounded-l-lg p-3 text-sm focus:ring-1 focus:ring-primary w-full" placeholder="Email Address" type="email"/>
+<button class="primary-gradient text-white px-4 rounded-r-lg">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-20 pt-10 border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-[#1b1c1c]/60 text-xs uppercase tracking-widest">© 2024 The Elevated Explorer. All rights reserved. Crafted for the digital curator.</p>
+<div class="flex gap-8">
+<a class="text-[#1b1c1c]/60 hover:text-[#904d00] transition-colors text-xs uppercase tracking-widest" href="#">Sustainability</a>
+<a class="text-[#1b1c1c]/60 hover:text-[#904d00] transition-colors text-xs uppercase tracking-widest" href="#">Privacy Policy</a>
+<a class="text-[#1b1c1c]/60 hover:text-[#904d00] transition-colors text-xs uppercase tracking-widest" href="#">Contact Us</a>
+</div>
+</div>
+</footer>
+</body></html>

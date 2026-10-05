@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Payment - The Elevated Explorer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "tertiary": "#6a5e33",
+                "surface-tint": "#47664b",
+                "surface-container": "#f0eded",
+                "background": "#fcf9f8",
+                "primary": "#17341d",
+                "on-surface": "#1b1c1c",
+                "surface-container-lowest": "#ffffff",
+                "tertiary-fixed-dim": "#d6c692",
+                "on-error": "#ffffff",
+                "on-secondary-container": "#663500",
+                "secondary": "#904d00",
+                "on-surface-variant": "#424842",
+                "on-secondary-fixed-variant": "#6e3900",
+                "on-error-container": "#93000a",
+                "secondary-fixed": "#ffdcc3",
+                "tertiary-fixed": "#f3e2ac",
+                "on-primary-fixed": "#03210c",
+                "inverse-primary": "#adcfae",
+                "on-tertiary-fixed-variant": "#51461e",
+                "surface-container-highest": "#e4e2e1",
+                "secondary-fixed-dim": "#ffb77d",
+                "surface-dim": "#dcd9d9",
+                "surface-bright": "#fcf9f8",
+                "error-container": "#ffdad6",
+                "surface-container-high": "#eae7e7",
+                "on-secondary-fixed": "#2f1500",
+                "inverse-surface": "#303030",
+                "on-primary-fixed-variant": "#2f4d34",
+                "tertiary-container": "#baaa79",
+                "on-tertiary-container": "#493e17",
+                "inverse-on-surface": "#f3f0ef",
+                "on-background": "#1b1c1c",
+                "on-tertiary-fixed": "#231b00",
+                "outline": "#737971",
+                "primary-container": "#2d4b32",
+                "on-primary-container": "#98ba9a",
+                "primary-fixed": "#c8ecc9",
+                "on-tertiary": "#ffffff",
+                "on-secondary": "#ffffff",
+                "surface-container-low": "#f6f3f2",
+                "on-primary": "#ffffff",
+                "error": "#ba1a1a",
+                "surface-variant": "#e4e2e1",
+                "surface": "#fcf9f8",
+                "outline-variant": "#c2c8bf",
+                "primary-fixed-dim": "#adcfae",
+                "secondary-container": "#fe932c"
+              },
+              fontFamily: {
+                "headline": ["Noto Serif"],
+                "body": ["Plus Jakarta Sans"],
+                "label": ["Plus Jakarta Sans"]
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        h1, h2, h3 { font-family: 'Noto Serif', serif; }
+        .glass-panel {
+            background: rgba(252, 249, 248, 0.8);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+<!-- TopNavBar (Fixed) -->
+<nav class="fixed top-0 w-full z-50 bg-[#fcf9f8]/80 dark:bg-[#1b1c1c]/80 backdrop-blur-md">
+<div class="flex justify-between items-center px-8 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-['Noto_Serif'] italic text-[#17341d] dark:text-[#fcf9f8]">The Elevated Explorer</div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="text-[#1b1c1c]/70 dark:text-[#fcf9f8]/70 font-['Plus_Jakarta_Sans'] text-sm uppercase tracking-widest hover:text-[#904d00] transition-colors duration-300" href="#">Destinations</a>
+<a class="text-[#1b1c1c]/70 dark:text-[#fcf9f8]/70 font-['Plus_Jakarta_Sans'] text-sm uppercase tracking-widest hover:text-[#904d00] transition-colors duration-300" href="#">Tours</a>
+<a class="text-[#1b1c1c]/70 dark:text-[#fcf9f8]/70 font-['Plus_Jakarta_Sans'] text-sm uppercase tracking-widest hover:text-[#904d00] transition-colors duration-300" href="#">Our Story</a>
+<a class="text-[#1b1c1c]/70 dark:text-[#fcf9f8]/70 font-['Plus_Jakarta_Sans'] text-sm uppercase tracking-widest hover:text-[#904d00] transition-colors duration-300" href="#">Journal</a>
+</div>
+<div class="flex items-center space-x-6">
+<span class="material-symbols-outlined text-primary cursor-pointer" data-icon="account_circle">account_circle</span>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-md font-['Noto_Serif'] font-bold tracking-tight hover:opacity-80 transition-all">Book Now</button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-6 md:px-12 max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+<!-- Left Side: Payment Information -->
+<div class="lg:col-span-7 space-y-12">
+<header>
+<div class="flex items-center space-x-4 mb-4 text-secondary">
+<span class="text-xs font-label font-semibold uppercase tracking-widest">Step 03 — Finalize</span>
+<div class="h-px w-12 bg-secondary opacity-30"></div>
+</div>
+<h1 class="text-4xl md:text-5xl font-headline font-bold text-primary mb-6">Confirm Your Journey</h1>
+<p class="text-on-surface-variant max-w-xl text-lg leading-relaxed">Your curation is complete. Secure your reservation with our encrypted boutique payment gateway.</p>
+</header>
+<!-- Payment Methods -->
+<section class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<button class="flex items-center justify-center space-x-3 py-4 bg-on-surface text-surface-container-lowest rounded-xl hover:opacity-90 transition-all">
+<span class="font-semibold">Apple Pay</span>
+</button>
+<button class="flex items-center justify-center space-x-3 py-4 border-2 border-surface-container-highest text-on-surface rounded-xl hover:bg-surface-container-low transition-all">
+<span class="font-semibold">Google Pay</span>
+</button>
+</div>
+<div class="relative py-4 flex items-center">
+<div class="flex-grow border-t border-outline-variant opacity-30"></div>
+<span class="flex-shrink mx-4 text-on-surface-variant font-label text-xs uppercase tracking-widest">Or pay with card</span>
+<div class="flex-grow border-t border-outline-variant opacity-30"></div>
+</div>
+<!-- Secure Form -->
+<div class="space-y-6">
+<div class="group">
+<label class="block text-xs font-label font-bold uppercase tracking-widest text-on-surface-variant mb-2 ml-1">Cardholder Name</label>
+<input class="w-full bg-surface-container-low border-none rounded-xl py-4 px-6 focus:ring-2 focus:ring-primary/40 focus:bg-surface-container-lowest transition-all placeholder:text-outline-variant" placeholder="ALEXANDER VANDERBILT" type="text"/>
+</div>
+<div class="group">
+<label class="block text-xs font-label font-bold uppercase tracking-widest text-on-surface-variant mb-2 ml-1">Card Number</label>
+<div class="relative">
+<input class="w-full bg-surface-container-low border-none rounded-xl py-4 px-6 focus:ring-2 focus:ring-primary/40 focus:bg-surface-container-lowest transition-all placeholder:text-outline-variant" placeholder="0000 0000 0000 0000" type="text"/>
+<div class="absolute right-4 top-1/2 -translate-y-1/2 flex space-x-2">
+<span class="material-symbols-outlined text-on-surface-variant opacity-50" data-icon="credit_card">credit_card</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-6">
+<div class="group">
+<label class="block text-xs font-label font-bold uppercase tracking-widest text-on-surface-variant mb-2 ml-1">Expiry Date</label>
+<input class="w-full bg-surface-container-low border-none rounded-xl py-4 px-6 focus:ring-2 focus:ring-primary/40 focus:bg-surface-container-lowest transition-all placeholder:text-outline-variant" placeholder="MM / YY" type="text"/>
+</div>
+<div class="group">
+<label class="block text-xs font-label font-bold uppercase tracking-widest text-on-surface-variant mb-2 ml-1">CVV</label>
+<input class="w-full bg-surface-container-low border-none rounded-xl py-4 px-6 focus:ring-2 focus:ring-primary/40 focus:bg-surface-container-lowest transition-all placeholder:text-outline-variant" placeholder="123" type="text"/>
+</div>
+</div>
+<div class="pt-4">
+<div class="flex items-start space-x-4 bg-surface-container-low p-4 rounded-xl">
+<span class="material-symbols-outlined text-primary mt-0.5" data-icon="shield">shield</span>
+<p class="text-sm text-on-surface-variant leading-snug">Your payment is secured with 256-bit SSL encryption. We do not store your full card details.</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Side: Investment Summary -->
+<div class="lg:col-span-5">
+<div class="sticky top-32 space-y-8">
+<div class="bg-surface-container-low rounded-2xl p-8 md:p-10 relative overflow-hidden">
+<!-- Decorative Texture -->
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -mr-16 -mt-16 blur-3xl"></div>
+<h2 class="text-2xl font-headline font-bold text-primary mb-8">Total Investment</h2>
+<div class="space-y-6">
+<div class="flex justify-between items-start">
+<div>
+<p class="font-bold text-primary">Serengeti Sky-Safari</p>
+<p class="text-sm text-on-surface-variant">12 Days • Luxury Tented Camp</p>
+</div>
+<span class="font-headline text-lg">$14,500</span>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<p class="font-bold text-primary">Private Curator Upgrade</p>
+<p class="text-sm text-on-surface-variant">Personalized itinerary &amp; 24/7 concierge</p>
+</div>
+<span class="font-headline text-lg">$2,200</span>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<p class="font-bold text-primary">Carbon Offset Initiative</p>
+<p class="text-sm text-on-surface-variant">Verified reforesting donation</p>
+</div>
+<span class="font-headline text-lg">$150</span>
+</div>
+<div class="pt-6 border-t border-outline-variant/30">
+<div class="flex justify-between items-center mb-2">
+<span class="text-on-surface-variant">Subtotal</span>
+<span class="text-on-surface-variant">$16,850</span>
+</div>
+<div class="flex justify-between items-center mb-8">
+<span class="text-on-surface-variant">Taxes &amp; Fees</span>
+<span class="text-on-surface-variant">$420</span>
+</div>
+<div class="flex justify-between items-end">
+<span class="font-label font-bold uppercase tracking-widest text-primary">Grand Total</span>
+<span class="text-4xl font-headline font-bold text-primary">$17,270</span>
+</div>
+</div>
+</div>
+<button class="w-full mt-10 py-5 bg-primary text-on-primary rounded-xl font-headline text-lg font-bold shadow-xl shadow-primary/10 hover:shadow-primary/20 transition-all flex items-center justify-center space-x-3">
+<span>Complete Investment</span>
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<p class="text-center text-xs text-on-surface-variant mt-6 uppercase tracking-widest font-label">Confirming triggers a booking confirmation via email</p>
+</div>
+<!-- Testimonial / Trust Bit -->
+<div class="p-8 border border-outline-variant/20 rounded-2xl flex items-center space-x-6">
+<img alt="Client" class="w-16 h-16 rounded-full object-cover" data-alt="Portrait of a satisfied luxury traveler" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJ-bSEAV0UCMoNMel4QH7OJ5_s1r91GPr90UfqMlMz-3NiBnZ2P0y3FFt2vv5PX-MgB8vfPuYy5fLkQmNSev10UpEkO-fIapJhn1NNMXAUh5ZCwttRjJSdVom0Hj4ANFtgWDzcu1JNXJ2cBZIpPmvoWrcNPEjltc2TAnv8tY_919aGkohZ82jSHLEgXHCdoTci1B2uhVIqg4Ib-0VUVaaOK9ZdrKQ4o6XjHOEZqcQVdeMaPoyFfKBAkH_KD98br8V8SCi2SRl_b7Ry"/>
+<div>
+<p class="italic text-on-surface-variant text-sm mb-1">"The most seamless travel experience I've curated in twenty years of exploration."</p>
+<p class="text-xs font-bold font-label text-primary uppercase tracking-tighter">— Julian R., Member since 2018</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f6f3f2] dark:bg-[#141515] w-full rounded-t-none">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 max-w-screen-2xl mx-auto">
+<div class="md:col-span-1">
+<div class="text-xl font-['Noto_Serif'] text-[#17341d] dark:text-[#fcf9f8] mb-6">The Elevated Explorer</div>
+<p class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 font-['Plus_Jakarta_Sans'] text-sm leading-relaxed">
+                    Crafting immersive journeys for the modern digital nomad and curious soul.
+                </p>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold text-[#17341d] dark:text-[#fcf9f8] text-sm uppercase tracking-widest">Expeditions</h4>
+<nav class="flex flex-col space-y-2">
+<a class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00] transition-all" href="#">Destinations</a>
+<a class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00] transition-all" href="#">Experience</a>
+<a class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00] transition-all" href="#">Sustainability</a>
+</nav>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold text-[#17341d] dark:text-[#fcf9f8] text-sm uppercase tracking-widest">Journal</h4>
+<nav class="flex flex-col space-y-2">
+<a class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00] transition-all" href="#">Newsletter</a>
+<a class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00] transition-all" href="#">Privacy Policy</a>
+<a class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00] transition-all" href="#">Terms of Service</a>
+</nav>
+</div>
+<div class="space-y-6">
+<h4 class="font-bold text-[#17341d] dark:text-[#fcf9f8] text-sm uppercase tracking-widest">Newsletter</h4>
+<div class="flex">
+<input class="bg-surface-container-highest border-none rounded-l-xl px-4 py-3 w-full text-sm focus:ring-0" placeholder="Email Address" type="email"/>
+<button class="bg-primary text-on-primary px-4 py-3 rounded-r-xl">
+<span class="material-symbols-outlined text-sm" data-icon="send">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="border-t border-outline-variant/10 max-w-screen-2xl mx-auto px-12 py-8">
+<p class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 font-['Plus_Jakarta_Sans'] text-xs">
+                © 2024 The Elevated Explorer. All rights reserved.
+            </p>
+</div>
+</footer>
+</body></html>

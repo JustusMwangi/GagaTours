@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact | The Elevated Explorer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary": "#6a5e33",
+              "surface-tint": "#47664b",
+              "surface-container": "#f0eded",
+              "background": "#fcf9f8",
+              "primary": "#17341d",
+              "on-surface": "#1b1c1c",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-fixed-dim": "#d6c692",
+              "on-error": "#ffffff",
+              "on-secondary-container": "#663500",
+              "secondary": "#904d00",
+              "on-surface-variant": "#424842",
+              "on-secondary-fixed-variant": "#6e3900",
+              "on-error-container": "#93000a",
+              "secondary-fixed": "#ffdcc3",
+              "tertiary-fixed": "#f3e2ac",
+              "on-primary-fixed": "#03210c",
+              "inverse-primary": "#adcfae",
+              "on-tertiary-fixed-variant": "#51461e",
+              "surface-container-highest": "#e4e2e1",
+              "secondary-fixed-dim": "#ffb77d",
+              "surface-dim": "#dcd9d9",
+              "surface-bright": "#fcf9f8",
+              "error-container": "#ffdad6",
+              "surface-container-high": "#eae7e7",
+              "on-secondary-fixed": "#2f1500",
+              "inverse-surface": "#303030",
+              "on-primary-fixed-variant": "#2f4d34",
+              "tertiary-container": "#baaa79",
+              "on-tertiary-container": "#493e17",
+              "inverse-on-surface": "#f3f0ef",
+              "on-background": "#1b1c1c",
+              "on-tertiary-fixed": "#231b00",
+              "outline": "#737971",
+              "primary-container": "#2d4b32",
+              "on-primary-container": "#98ba9a",
+              "primary-fixed": "#c8ecc9",
+              "on-tertiary": "#ffffff",
+              "on-secondary": "#ffffff",
+              "surface-container-low": "#f6f3f2",
+              "on-primary": "#ffffff",
+              "error": "#ba1a1a",
+              "surface-variant": "#e4e2e1",
+              "surface": "#fcf9f8",
+              "outline-variant": "#c2c8bf",
+              "primary-fixed-dim": "#adcfae",
+              "secondary-container": "#fe932c"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-panel {
+        background: rgba(252, 249, 248, 0.8);
+        backdrop-filter: blur(20px);
+      }
+      .primary-gradient {
+        background: linear-gradient(135deg, #17341d 0%, #2d4b32 100%);
+      }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fcf9f8]/80 dark:bg-[#1b1c1c]/80 backdrop-blur-md">
+<div class="flex justify-between items-center px-8 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-['Noto_Serif'] italic text-[#17341d] dark:text-[#fcf9f8]">The Elevated Explorer</div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="text-[#1b1c1c]/70 dark:text-[#fcf9f8]/70 font-['Plus_Jakarta_Sans'] text-sm uppercase tracking-widest hover:text-[#904d00] transition-colors duration-300" href="#">Destinations</a>
+<a class="text-[#1b1c1c]/70 dark:text-[#fcf9f8]/70 font-['Plus_Jakarta_Sans'] text-sm uppercase tracking-widest hover:text-[#904d00] transition-colors duration-300" href="#">Tours</a>
+<a class="text-[#1b1c1c]/70 dark:text-[#fcf9f8]/70 font-['Plus_Jakarta_Sans'] text-sm uppercase tracking-widest hover:text-[#904d00] transition-colors duration-300" href="#">Our Story</a>
+<a class="text-[#1b1c1c]/70 dark:text-[#fcf9f8]/70 font-['Plus_Jakarta_Sans'] text-sm uppercase tracking-widest hover:text-[#904d00] transition-colors duration-300" href="#">Journal</a>
+</div>
+<div class="flex items-center space-x-6">
+<span class="material-symbols-outlined text-[#17341d] cursor-pointer">account_circle</span>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-xl font-headline font-bold tracking-tight hover:opacity-80 active:scale-95 transition-all">Book Now</button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24">
+<!-- Hero Header -->
+<header class="px-8 max-w-screen-2xl mx-auto mb-20">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
+<div class="md:col-span-8">
+<span class="inline-block text-secondary font-label text-sm uppercase tracking-[0.2em] mb-4">Get in Touch</span>
+<h1 class="text-5xl md:text-7xl font-headline font-bold text-primary leading-tight tracking-tight">Begin your next <br/><span class="italic font-normal">curated odyssey.</span></h1>
+</div>
+<div class="md:col-span-4 pb-2">
+<p class="text-on-surface-variant leading-relaxed text-lg">Whether you're seeking a remote wilderness retreat or a cultural deep-dive, our concierges are ready to architect your journey.</p>
+</div>
+</div>
+</header>
+<!-- Contact Grid Content -->
+<section class="px-8 max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Inquiry Form -->
+<div class="lg:col-span-7 bg-surface-container-low p-10 md:p-16 rounded-xl">
+<h2 class="text-3xl font-headline font-bold text-primary mb-10">Send an Inquiry</h2>
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="flex flex-col space-y-2">
+<label class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Full Name</label>
+<input class="bg-surface-container-highest border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/40 focus:bg-surface-container-lowest transition-all placeholder:text-outline-variant" placeholder="Julianne Smith" type="text"/>
+</div>
+<div class="flex flex-col space-y-2">
+<label class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Email Address</label>
+<input class="bg-surface-container-highest border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/40 focus:bg-surface-container-lowest transition-all placeholder:text-outline-variant" placeholder="julianne@example.com" type="email"/>
+</div>
+</div>
+<div class="flex flex-col space-y-2">
+<label class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Preferred Destination</label>
+<input class="bg-surface-container-highest border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/40 focus:bg-surface-container-lowest transition-all placeholder:text-outline-variant" placeholder="e.g. Serengeti, Bhutan, Amalfi Coast" type="text"/>
+</div>
+<div class="flex flex-col space-y-2">
+<label class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Your Vision</label>
+<textarea class="bg-surface-container-highest border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/40 focus:bg-surface-container-lowest transition-all placeholder:text-outline-variant" placeholder="Tell us about the experience you're dreaming of..." rows="5"></textarea>
+</div>
+<button class="primary-gradient text-on-primary px-10 py-4 rounded-xl font-headline font-bold text-lg hover:shadow-xl hover:-translate-y-0.5 transition-all" type="submit">Submit Inquiry</button>
+</form>
+</div>
+<!-- Contact Sidebar -->
+<div class="lg:col-span-5 flex flex-col space-y-12">
+<!-- Quick Channels -->
+<div class="space-y-8">
+<div class="flex items-start space-x-6">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-secondary-fixed">mail</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-primary text-xl">Email Us</h4>
+<p class="text-on-surface-variant mt-1">concierge@elevatedexplorer.com</p>
+<p class="text-on-surface-variant">Press: media@elevatedexplorer.com</p>
+</div>
+</div>
+<div class="flex items-start space-x-6">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-secondary-fixed">chat</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-primary text-xl">WhatsApp &amp; Text</h4>
+<p class="text-on-surface-variant mt-1">+1 (555) 892-0431</p>
+<p class="text-secondary font-medium mt-2 flex items-center">
+<span class="w-2 h-2 rounded-full bg-secondary mr-2"></span>
+                                    Available 24/7 for active guests
+                                </p>
+</div>
+</div>
+<div class="flex items-start space-x-6">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-secondary-fixed">location_on</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-primary text-xl">The Atelier</h4>
+<p class="text-on-surface-variant mt-1 italic">By Appointment Only</p>
+<address class="text-on-surface-variant not-italic mt-2">
+                                    742 Curated Way, Suite 10<br/>
+                                    Cape Town, 8001<br/>
+                                    South Africa
+                                </address>
+</div>
+</div>
+</div>
+<!-- Concierge Spotlight Card -->
+<div class="relative overflow-hidden rounded-xl bg-primary-container p-8 text-on-primary-container">
+<div class="relative z-10">
+<span class="inline-block px-3 py-1 bg-surface-tint/30 rounded-full text-[10px] uppercase tracking-widest font-bold mb-6">Concierge Spotlight</span>
+<div class="flex items-center space-x-4 mb-6">
+<img alt="Senior Concierge" class="w-16 h-16 rounded-full object-cover border-2 border-on-primary-container/20" data-alt="Portrait of a sophisticated female travel concierge" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvAH7_BCu-jYvYpaibS6kltWtydCossNqVivoeu2YVuSsB5ACc97rARcl8Oer8jUT2oHAXg60X0QFYnnfMZ3tAjzJ9vG4wLziN_RVg2wpnejnjYTVpdnWheeM2CO7KEtZemznBrvzaxRp1fJKHGj9SaYeYxdd9AMyGPHuHTOHCdLL8730mZX8rcPpCBucQDOD9uhqr3K5Hd2i7kq-UGn_7Ky9jdy3GuCk3XlQST7_pukVpd1_pKPTDuPIRo-JNY8trvZudvnoghbPP"/>
+<div>
+<p class="font-headline font-bold text-surface-container-lowest text-lg leading-tight">Elena Moretti</p>
+<p class="text-xs uppercase tracking-wider opacity-70">Senior Safari Specialist</p>
+</div>
+</div>
+<p class="italic font-headline leading-relaxed text-surface-container-lowest mb-6">"My role is to find the soul of a destination. When you inquire, you aren't talking to a computer—you're talking to a curator who has personally walked the paths we recommend."</p>
+<a class="text-on-primary font-label text-sm uppercase tracking-widest flex items-center hover:opacity-80" href="#">Meet the Team <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span></a>
+</div>
+<!-- Abstract Background Texture -->
+<div class="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-surface-tint opacity-20 rounded-full blur-3xl"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Asymmetric Map Section -->
+<section class="mt-24 px-8 max-w-screen-2xl mx-auto overflow-hidden">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-0 relative">
+<div class="md:col-span-11 relative z-10">
+<div class="h-[500px] rounded-xl overflow-hidden grayscale contrast-125 opacity-90 group transition-all duration-700">
+<img alt="Map Location" class="w-full h-full object-cover" data-alt="Elegant black and white aerial view of a coastal city" data-location="Cape Town" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIlGMlUFV0jcf7zyfjFaojLevd9M17_-4xMOWRirLbqGmQRJuUHEH1uSWdCMJCjujHfdW2-brKPzimynwYWQ4u92b2gZYuzf2cPlcrdaL9ELWSTsSrqIWzs-QY7ui2Sgp-WCb-rFeeAt-8rzXCb63k5rrU-p7Oz5LZV9lRbAwG5k7muLxKH39NMh2y_kngoJ4yWuGTcHTVF2GK54dDXVw-HN1bHQqaQSuNvKzOXKg32NtVr42umzC2d4O6Gkeygg8US5X8ig5sl-zG"/>
+<div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors"></div>
+</div>
+<!-- Floating Glass Tag -->
+<div class="absolute bottom-8 left-8 glass-panel p-6 rounded-xl border border-white/20 shadow-2xl max-w-xs">
+<h3 class="font-headline font-bold text-primary mb-2">The Global Reach</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">While our roots are in Cape Town, our network spans over 45 countries, with dedicated logistics teams on every continent.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f6f3f2] dark:bg-[#141515]">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 max-w-screen-2xl mx-auto">
+<div class="space-y-6">
+<div class="text-xl font-['Noto_Serif'] text-[#17341d] dark:text-[#fcf9f8]">The Elevated Explorer</div>
+<p class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 font-['Plus_Jakarta_Sans'] text-sm leading-relaxed">Crafting deeply immersive, tactile journeys for the modern traveler. Every itinerary is a masterpiece.</p>
+</div>
+<div class="md:col-span-2 grid grid-cols-2 gap-8">
+<div class="space-y-4">
+<h5 class="text-[#17341d] dark:text-[#fcf9f8] font-bold text-sm uppercase tracking-widest">Explore</h5>
+<ul class="space-y-2">
+<li><a class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 font-['Plus_Jakarta_Sans'] text-sm hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00]" href="#">Expeditions</a></li>
+<li><a class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 font-['Plus_Jakarta_Sans'] text-sm hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00]" href="#">Experience</a></li>
+<li><a class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 font-['Plus_Jakarta_Sans'] text-sm hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00]" href="#">Newsletter</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="text-[#17341d] dark:text-[#fcf9f8] font-bold text-sm uppercase tracking-widest">Values</h5>
+<ul class="space-y-2">
+<li><a class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 font-['Plus_Jakarta_Sans'] text-sm hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00]" href="#">Sustainability</a></li>
+<li><a class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 font-['Plus_Jakarta_Sans'] text-sm hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00]" href="#">Privacy Policy</a></li>
+<li><a class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 font-['Plus_Jakarta_Sans'] text-sm hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00]" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<div class="space-y-6">
+<h5 class="text-[#17341d] dark:text-[#fcf9f8] font-bold text-sm uppercase tracking-widest">Connect</h5>
+<div class="flex space-x-4">
+<div class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center cursor-pointer hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-sm">public</span>
+</div>
+<div class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center cursor-pointer hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-sm">chat_bubble</span>
+</div>
+</div>
+<p class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 font-['Plus_Jakarta_Sans'] text-xs">© 2024 The Elevated Explorer. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</body></html>

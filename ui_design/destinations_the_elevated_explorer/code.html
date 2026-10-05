@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary": "#6a5e33",
+              "surface-tint": "#47664b",
+              "surface-container": "#f0eded",
+              "background": "#fcf9f8",
+              "primary": "#17341d",
+              "on-surface": "#1b1c1c",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-fixed-dim": "#d6c692",
+              "on-error": "#ffffff",
+              "on-secondary-container": "#663500",
+              "secondary": "#904d00",
+              "on-surface-variant": "#424842",
+              "on-secondary-fixed-variant": "#6e3900",
+              "on-error-container": "#93000a",
+              "secondary-fixed": "#ffdcc3",
+              "tertiary-fixed": "#f3e2ac",
+              "on-primary-fixed": "#03210c",
+              "inverse-primary": "#adcfae",
+              "on-tertiary-fixed-variant": "#51461e",
+              "surface-container-highest": "#e4e2e1",
+              "secondary-fixed-dim": "#ffb77d",
+              "surface-dim": "#dcd9d9",
+              "surface-bright": "#fcf9f8",
+              "error-container": "#ffdad6",
+              "surface-container-high": "#eae7e7",
+              "on-secondary-fixed": "#2f1500",
+              "inverse-surface": "#303030",
+              "on-primary-fixed-variant": "#2f4d34",
+              "tertiary-container": "#baaa79",
+              "on-tertiary-container": "#493e17",
+              "inverse-on-surface": "#f3f0ef",
+              "on-background": "#1b1c1c",
+              "on-tertiary-fixed": "#231b00",
+              "outline": "#737971",
+              "primary-container": "#2d4b32",
+              "on-primary-container": "#98ba9a",
+              "primary-fixed": "#c8ecc9",
+              "on-tertiary": "#ffffff",
+              "on-secondary": "#ffffff",
+              "surface-container-low": "#f6f3f2",
+              "on-primary": "#ffffff",
+              "error": "#ba1a1a",
+              "surface-variant": "#e4e2e1",
+              "surface": "#fcf9f8",
+              "outline-variant": "#c2c8bf",
+              "primary-fixed-dim": "#adcfae",
+              "secondary-container": "#fe932c"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+        }
+        .asymmetric-overlap {
+            margin-top: -4rem;
+        }
+        @media (max-width: 768px) {
+            .editorial-grid {
+                display: flex;
+                flex-direction: column;
+            }
+            .asymmetric-overlap {
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary-fixed">
+<!-- Top Navigation Shell -->
+<nav class="bg-[#fcf9f8]/80 dark:bg-[#1b1c1c]/80 backdrop-blur-md fixed top-0 w-full z-50">
+<div class="flex justify-between items-center px-8 py-6 max-w-screen-2xl mx-auto">
+<a class="text-2xl font-headline italic text-[#17341d] dark:text-[#fcf9f8]" href="#">The Elevated Explorer</a>
+<div class="hidden md:flex items-center space-x-12">
+<a class="text-[#17341d] dark:text-[#fcf9f8] border-b-2 border-[#904d00] pb-1 font-label text-sm uppercase tracking-widest" href="#">Destinations</a>
+<a class="text-[#1b1c1c]/70 dark:text-[#fcf9f8]/70 font-label text-sm uppercase tracking-widest hover:text-[#904d00] transition-colors duration-300" href="#">Tours</a>
+<a class="text-[#1b1c1c]/70 dark:text-[#fcf9f8]/70 font-label text-sm uppercase tracking-widest hover:text-[#904d00] transition-colors duration-300" href="#">Our Story</a>
+<a class="text-[#1b1c1c]/70 dark:text-[#fcf9f8]/70 font-label text-sm uppercase tracking-widest hover:text-[#904d00] transition-colors duration-300" href="#">Journal</a>
+</div>
+<div class="flex items-center space-x-6">
+<span class="material-symbols-outlined text-primary cursor-pointer" data-icon="account_circle">account_circle</span>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-xl font-label text-sm font-bold hover:bg-primary-container transition-all active:opacity-80 active:scale-95">Book Now</button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24">
+<!-- Hero Section -->
+<header class="px-8 max-w-screen-2xl mx-auto mb-20">
+<div class="editorial-grid">
+<div class="col-span-12 md:col-span-7">
+<span class="font-label text-secondary uppercase tracking-[0.3em] text-sm block mb-4">Curated Expeditions</span>
+<h1 class="font-headline text-5xl md:text-7xl font-bold text-primary leading-tight mb-8">Where Earth Whispers Her Secrets</h1>
+<p class="text-xl text-on-surface-variant max-w-xl leading-relaxed">From the golden plains of the Masai Mara to the skeletal beauty of Deadvlei, our destinations are selected for their soul, not their popularity.</p>
+</div>
+<div class="hidden md:block col-span-5 relative">
+<div class="absolute inset-0 bg-surface-container-low rounded-xl -rotate-3 -z-10"></div>
+<img alt="African Savannah Landscape" class="w-full h-[400px] object-cover rounded-xl shadow-xl" data-alt="Vast golden African savannah landscape at sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_HuCB2pD0hEWIX95zx7nneiZ3DRt9z7bsO5-rUqgbIQRrjfuZwIh8BCI9wQjhWN0UsxoRT68dZtTFEAmABqsXjJ3Bk-4q-WmMiiCijd81g02UdvMp9IwmYDdmZCiHB0j6RY7YqohcrF1B9MJReq2pPHfi9EuSH26YiDx1zC1Zkgq9zJ0RcGGRv1T7VUAK7PafZZ9Ct1l1wIWqQXJ8g3bIe7N26diuXSH9aWXJRqleOaw_Fel4FUjLXbw_s-ijxj_40HvNQ9PNCbyB"/>
+</div>
+</div>
+</header>
+<!-- Region Filter Chips -->
+<section class="px-8 max-w-screen-2xl mx-auto mb-16 overflow-x-auto whitespace-nowrap scrollbar-hide">
+<div class="flex space-x-4">
+<button class="px-8 py-3 bg-primary text-on-primary rounded-full font-label text-sm font-medium">All Regions</button>
+<button class="px-8 py-3 bg-surface-container-high text-on-surface-variant rounded-full font-label text-sm font-medium hover:bg-surface-container-highest transition-colors">East Africa</button>
+<button class="px-8 py-3 bg-surface-container-high text-on-surface-variant rounded-full font-label text-sm font-medium hover:bg-surface-container-highest transition-colors">Southern Africa</button>
+<button class="px-8 py-3 bg-surface-container-high text-on-surface-variant rounded-full font-label text-sm font-medium hover:bg-surface-container-highest transition-colors">Coastal Retreats</button>
+<button class="px-8 py-3 bg-surface-container-high text-on-surface-variant rounded-full font-label text-sm font-medium hover:bg-surface-container-highest transition-colors">Desert Sanctuaries</button>
+</div>
+</section>
+<!-- Destinations Bento Grid / Editorial Layout -->
+<section class="px-8 max-w-screen-2xl mx-auto space-y-32">
+<!-- Destination Entry: Kenya -->
+<div class="editorial-grid items-center">
+<div class="col-span-12 md:col-span-8 relative">
+<img alt="Kenya Wildlife" class="w-full h-[600px] object-cover rounded-xl" data-alt="Majestic elephant walking through tall yellow grass in Kenya" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNll726FEVagYjJGPO778Ml766014tB0RYx_F-VvEDZaYyLt8T6SWkdXFsk1-zqkgLpJLDmTQY6dRGZ1rfHPoCXBomld_h33kO-D36ajNRFXhhLcoMdQgOyZC1FnVz-bUgWngdq71y3bxYUlfZKnIyU2PQTR5nHubYvQl__hNhXV6EpbZDLX3F9i0jYRHSRqJuKW1Z1Ua3ujzI9R28w0K81S5H9oEkncm1Clh8BrC57tTtpuDGd2biMcqJ-n8RJ49oVsiUpo9FYnF4"/>
+<div class="absolute bottom-8 left-8 bg-surface/80 backdrop-blur-xl p-8 rounded-xl max-w-md shadow-2xl">
+<h3 class="font-headline text-3xl font-bold text-primary mb-2">Masai Mara</h3>
+<p class="text-on-surface-variant font-medium mb-4">Kenya's crown jewel of biodiversity and ancient nomadic cultures.</p>
+<a class="inline-flex items-center text-secondary font-headline italic font-bold hover:underline decoration-2" href="#">
+                            Explore the Mara
+                            <span class="material-symbols-outlined ml-2" data-icon="arrow_right_alt">arrow_right_alt</span>
+</a>
+</div>
+</div>
+<div class="col-span-12 md:col-span-4 md:pl-12">
+<h2 class="font-headline text-4xl font-bold text-primary mb-6">Kenya</h2>
+<p class="text-on-surface-variant leading-relaxed mb-8">The cradle of humanity and the definitive safari experience. Kenya offers a mosaic of landscapes, from the snow-capped peaks of Mount Kenya to the white sands of the Swahili Coast.</p>
+<div class="space-y-4 border-l-2 border-outline-variant pl-6">
+<div class="flex flex-col">
+<span class="font-label text-[10px] uppercase tracking-widest text-secondary">Best Time to Visit</span>
+<span class="font-body font-semibold">July — October</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label text-[10px] uppercase tracking-widest text-secondary">Highlights</span>
+<span class="font-body font-semibold">Great Migration, Amboseli Giants</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Destination Entry: Tanzania -->
+<div class="editorial-grid items-center flex-row-reverse">
+<div class="col-span-12 md:col-span-4 md:pr-12">
+<h2 class="font-headline text-4xl font-bold text-primary mb-6">Tanzania</h2>
+<p class="text-on-surface-variant leading-relaxed mb-8">A land of extremes, Tanzania hosts the Serengeti's endless plains and the mystical Ngorongoro Crater, offering unparalleled intimacy with the wild.</p>
+<div class="space-y-4 border-l-2 border-outline-variant pl-6">
+<div class="flex flex-col">
+<span class="font-label text-[10px] uppercase tracking-widest text-secondary">Best Time to Visit</span>
+<span class="font-body font-semibold">June — February</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label text-[10px] uppercase tracking-widest text-secondary">Highlights</span>
+<span class="font-body font-semibold">Serengeti, Ngorongoro, Zanzibar</span>
+</div>
+</div>
+</div>
+<div class="col-span-12 md:col-span-8 relative">
+<img alt="Tanzania Landscape" class="w-full h-[600px] object-cover rounded-xl" data-alt="Wide shot of Serengeti plains with acacia trees at dawn" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANiTc45wnKRzg2hSPAqbuTeT6Sn1kWV3WYP8UAkCYR13aB0BTUJ-aII7JIn8RdcHKUchSGcQ5odLrlJ5nvKT_7V0LkwvNkgNxT_0V2dcicW80_AlVlnEhaiUqM4sxJCkpjaKLelI4bf11covpNnUnXcWl09snDAbBqtL-5v3HkDLFIowam3EZU9zUzOrG8s2iPUpVLnT1m1ZVZhAcqUDgQH450xCJy4hf69I45FL7KisJJlOAAhWc_i-ZkYMkbvvxOoGA2BwCCVXFK"/>
+<div class="absolute -top-12 -right-12 hidden lg:block">
+<div class="bg-surface-container-low p-6 rounded-xl shadow-lg transform rotate-3 max-w-xs">
+<img alt="Zanzibar" class="w-full h-48 object-cover rounded-lg mb-4" data-alt="Teal waters of the Zanzibar coast" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0lUuJRVjeW9urn-tXOsUq2tFcRS2KDE1fCHt4HlwMZ8MH6KuFYVKd9M4TEY8IIn27LrL_mY-idvn0DuR3m55xo0St9m8MRG13RZgMVPn2jxgxFpihqYU_9gBkilUkOnoiAu2HjISrGh57huoVrQlIg1lcGWNdbEVBg_zk64dSr4AzhCxcHNw47p_4-6sd5ztg7SQ7Wlw57SlWTUp8Vzpx41XZIOA82VqElZn68OShaSPzo8ks9_eiQvRQvz27OJ3hcnUA5Xiq7f69"/>
+<p class="font-headline text-lg italic text-primary">Coastal Extensions</p>
+<p class="text-sm text-on-surface-variant">The spice islands of Zanzibar await after your safari.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Destination Entry: Botswana -->
+<div class="bg-surface-container-low rounded-3xl p-12 editorial-grid items-center">
+<div class="col-span-12 md:col-span-6">
+<h2 class="font-headline text-4xl font-bold text-primary mb-6">Botswana</h2>
+<p class="text-on-surface-variant leading-relaxed mb-8">Experience the miracle of the Okavango Delta, where seasonal floods transform a desert into a lush waterworld. Botswana remains Africa’s most exclusive and pristine wilderness.</p>
+<div class="grid grid-cols-2 gap-4">
+<div class="group cursor-pointer">
+<div class="overflow-hidden rounded-xl h-48 mb-3">
+<img alt="Okavango" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Mokoro canoe on the Okavango Delta" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkX00pH9VSuKV0FfR46xYaACk-OWwVgsbAtz-3POxC20d73eIgjt_0Bd-gwQt9ggUhHdlMkNDG-oOkoPitj_1VuKU9siVwereMrzWWb5WyWk23N-62WHbCfCUUnP7WoC94es0iTwfKHyotolCjlOf8-wGW-5Z127Ca2xfsu8S6LAKwBOqs3j9vfVWx5jGK6NI9xjdLzQ46-i2qPHiI0tf1EaXimRlqZDc722fKVqWqAQeikZLUo4ZseU65JPrDlyvEJowooUmiuBEa"/>
+</div>
+<h4 class="font-headline text-xl font-bold text-primary">Okavango Delta</h4>
+</div>
+<div class="group cursor-pointer">
+<div class="overflow-hidden rounded-xl h-48 mb-3">
+<img alt="Chobe" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Elephant herd by the Chobe River" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASNtkSeuoYG8BrWoZK8nnvcKicCX1UQYCDLaDD9KJANbAatq8oEqQ3qYDgYxSTZPk0wAqIXeYR-kC-7t4xAkhFQliEs_7u9unpvr5-cLdRV0HtPHLHgwDpYkI5lw8Zi7KlGv61dposg4rhQcVubyTJLWwYSvW1lGDkzURc_jYJgag1NG4UVmpJtpmFcSVPcYA5kz6Y_6n2SX-J6hepdIK5f0ZbCCp3j-sGa6bfifyZx8iT_daJEu4VVSPivQ_BCv880O_0tKVjUfmB"/>
+</div>
+<h4 class="font-headline text-xl font-bold text-primary">Chobe River</h4>
+</div>
+</div>
+</div>
+<div class="col-span-12 md:col-span-6 relative flex justify-end">
+<img alt="Botswana Wildlife" class="w-[90%] h-[500px] object-cover rounded-xl shadow-2xl" data-alt="Leopard resting on a tree branch in Botswana" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCS_O0lc98JHV4dGwYkmh6mCaq91mxtERMiz8XaUKh0NO2VdON2g12Ah4EmCNNMC63wN7Sz-SQmlvi5lJjblFFWwJjs_23-u-CC1DW7FaM0C6GBmvShFRDeqjFREX-PRLYCwiGNl5_FMByDmTnxVP8CApjgOzocLhQsfaabrLcFrhr8ZFj9HX3FRlXSaYAcDtN173WD89OUFzdjX0Nuzpjla4xEuEZB_iLBwCy1ugxw5okNXGWU7qHMfTuIKtxKLb3jV0cSvAvU4f4z"/>
+</div>
+</div>
+</section>
+<!-- Newsletter CTA -->
+<section class="mt-32 px-8 max-w-4xl mx-auto text-center">
+<div class="bg-primary-container p-16 rounded-[2rem] text-on-primary-container relative overflow-hidden">
+<div class="absolute top-0 right-0 p-8 opacity-10">
+<span class="material-symbols-outlined text-9xl" data-icon="public">public</span>
+</div>
+<h2 class="font-headline text-4xl font-bold mb-6">The Explorer's Journal</h2>
+<p class="text-lg opacity-80 mb-8 font-light">Join our inner circle for monthly stories of discovery, exclusive destination previews, and the art of travel.</p>
+<form class="flex flex-col md:flex-row gap-4 max-w-md mx-auto">
+<input class="flex-grow bg-surface/10 border-none rounded-xl text-on-primary-container placeholder:text-on-primary-container/50 focus:ring-2 focus:ring-secondary py-4 px-6" placeholder="Your email address" type="email"/>
+<button class="bg-secondary text-on-secondary px-8 py-4 rounded-xl font-bold hover:brightness-110 transition-all">Subscribe</button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f6f3f2] dark:bg-[#141515] text-[#17341d] dark:text-[#fcf9f8] font-body text-sm">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 max-w-screen-2xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<h3 class="text-xl font-headline italic mb-6">The Elevated Explorer</h3>
+<p class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 leading-relaxed">Crafting immersive digital journeys through the world's most breathtaking landscapes. Your curator for the extraordinary.</p>
+</div>
+<div>
+<h4 class="font-bold uppercase tracking-widest text-xs mb-6 opacity-50">Discovery</h4>
+<ul class="space-y-4">
+<li><a class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00]" href="#">Expeditions</a></li>
+<li><a class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00]" href="#">Experience</a></li>
+<li><a class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00]" href="#">Newsletter</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold uppercase tracking-widest text-xs mb-6 opacity-50">Impact</h4>
+<ul class="space-y-4">
+<li><a class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00]" href="#">Sustainability</a></li>
+<li><a class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00]" href="#">Foundation</a></li>
+<li><a class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00]" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold uppercase tracking-widest text-xs mb-6 opacity-50">Legal</h4>
+<ul class="space-y-4">
+<li><a class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00]" href="#">Privacy Policy</a></li>
+<li><a class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00]" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<div class="px-12 py-8 border-t border-outline-variant/10 text-center text-[#1b1c1c]/40 dark:text-[#fcf9f8]/40">
+            © 2024 The Elevated Explorer. All rights reserved.
+        </div>
+</footer>
+</body></html>

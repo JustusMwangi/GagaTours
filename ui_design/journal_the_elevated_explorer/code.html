@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary": "#6a5e33",
+              "surface-tint": "#47664b",
+              "surface-container": "#f0eded",
+              "background": "#fcf9f8",
+              "primary": "#17341d",
+              "on-surface": "#1b1c1c",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-fixed-dim": "#d6c692",
+              "on-error": "#ffffff",
+              "on-secondary-container": "#663500",
+              "secondary": "#904d00",
+              "on-surface-variant": "#424842",
+              "on-secondary-fixed-variant": "#6e3900",
+              "on-error-container": "#93000a",
+              "secondary-fixed": "#ffdcc3",
+              "tertiary-fixed": "#f3e2ac",
+              "on-primary-fixed": "#03210c",
+              "inverse-primary": "#adcfae",
+              "on-tertiary-fixed-variant": "#51461e",
+              "surface-container-highest": "#e4e2e1",
+              "secondary-fixed-dim": "#ffb77d",
+              "surface-dim": "#dcd9d9",
+              "surface-bright": "#fcf9f8",
+              "error-container": "#ffdad6",
+              "surface-container-high": "#eae7e7",
+              "on-secondary-fixed": "#2f1500",
+              "inverse-surface": "#303030",
+              "on-primary-fixed-variant": "#2f4d34",
+              "tertiary-container": "#baaa79",
+              "on-tertiary-container": "#493e17",
+              "inverse-on-surface": "#f3f0ef",
+              "on-background": "#1b1c1c",
+              "on-tertiary-fixed": "#231b00",
+              "outline": "#737971",
+              "primary-container": "#2d4b32",
+              "on-primary-container": "#98ba9a",
+              "primary-fixed": "#c8ecc9",
+              "on-tertiary": "#ffffff",
+              "on-secondary": "#ffffff",
+              "surface-container-low": "#f6f3f2",
+              "on-primary": "#ffffff",
+              "error": "#ba1a1a",
+              "surface-variant": "#e4e2e1",
+              "surface": "#fcf9f8",
+              "outline-variant": "#c2c8bf",
+              "primary-fixed-dim": "#adcfae",
+              "secondary-container": "#fe932c"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        h1, h2, h3 { font-family: 'Noto Serif', serif; }
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 2rem;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-secondary/30">
+<!-- TopNavBar -->
+<nav class="bg-[#fcf9f8]/80 dark:bg-[#1b1c1c]/80 backdrop-blur-md fixed top-0 w-full z-50">
+<div class="flex justify-between items-center px-8 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-['Noto_Serif'] italic text-[#17341d] dark:text-[#fcf9f8]">
+                The Elevated Explorer
+            </div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="text-[#1b1c1c]/70 dark:text-[#fcf9f8]/70 font-['Plus_Jakarta_Sans'] text-sm uppercase tracking-widest hover:text-[#904d00] transition-colors duration-300" href="#">Destinations</a>
+<a class="text-[#1b1c1c]/70 dark:text-[#fcf9f8]/70 font-['Plus_Jakarta_Sans'] text-sm uppercase tracking-widest hover:text-[#904d00] transition-colors duration-300" href="#">Tours</a>
+<a class="text-[#1b1c1c]/70 dark:text-[#fcf9f8]/70 font-['Plus_Jakarta_Sans'] text-sm uppercase tracking-widest hover:text-[#904d00] transition-colors duration-300" href="#">Our Story</a>
+<a class="text-[#17341d] dark:text-[#fcf9f8] border-b-2 border-[#904d00] pb-1 font-['Plus_Jakarta_Sans'] text-sm uppercase tracking-widest" href="#">Journal</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="material-symbols-outlined text-[#17341d] dark:text-[#fcf9f8] hover:opacity-80 transition-opacity">account_circle</button>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-xl font-body font-semibold hover:bg-gradient-to-br hover:from-primary hover:to-primary-container transition-all active:scale-95">
+                    Book Now
+                </button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24">
+<!-- Hero Editorial -->
+<header class="max-w-screen-2xl mx-auto px-8 mb-24">
+<div class="flex flex-col md:flex-row items-end justify-between gap-8">
+<div class="max-w-3xl">
+<span class="text-secondary font-label uppercase tracking-[0.2em] text-sm mb-4 block">Field Notes &amp; Observations</span>
+<h1 class="text-6xl md:text-8xl font-headline font-bold text-primary leading-tight">
+                        The Journal
+                    </h1>
+</div>
+<div class="max-w-md pb-4 border-l-2 border-secondary/20 pl-8">
+<p class="text-on-surface-variant font-body leading-relaxed">
+                        Curated stories from the edge of the wilderness. From technical wildlife photography guides to the quiet philosophy of conservation.
+                    </p>
+</div>
+</div>
+</header>
+<!-- Featured Section (Asymmetric) -->
+<section class="max-w-screen-2xl mx-auto px-8 mb-32">
+<div class="relative grid grid-cols-1 md:grid-cols-12 gap-0 items-center">
+<div class="md:col-span-8 z-10">
+<div class="relative group overflow-hidden rounded-xl shadow-2xl">
+<img alt="Lioness in long grass" class="w-full aspect-[16/9] object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close up of a majestic lioness in gold grass" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgoV-EEJbYCeXdKLIi4ill2XGDdb_w3NrFZp_Gmj_t3lz18UPQ4eAldM-3Fuh2T12KCvjjSxjbtCNNQpXx_QHqW8mMAWRCS_VpnGFxuGjwx3ZwP0BWfzWE5_80RjBZoeoWMa-vdNfhfa_IdSoEVGR6rwLDK5-UQlDUW6ATqufdngcJmDi-zefnV8L6ve7k7WOGfuaeUprK29VqFL2l8rsw6OTBFOYJjPkOi4D_NfhanUVv1ohsrbPlXYUWzDm9EAyuML0vYbX9sgEG"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+</div>
+</div>
+<div class="md:col-span-5 md:-ml-24 z-20 mt-8 md:mt-0">
+<div class="bg-surface-container-low p-12 rounded-xl backdrop-blur-xl shadow-xl">
+<span class="text-secondary font-label text-xs uppercase tracking-widest mb-4 block">Photography Masterclass</span>
+<h2 class="text-4xl font-headline font-bold text-primary mb-6 leading-tight">Capturing the Golden Hour in the Serengeti</h2>
+<p class="text-on-surface-variant mb-8 line-clamp-3">
+                            Mastering light in the vast African plains requires more than just technical skill—it requires an intimate understanding of the landscape's rhythm.
+                        </p>
+<a class="inline-flex items-center text-primary font-headline italic font-bold group" href="#">
+                            Read Article 
+                            <span class="material-symbols-outlined ml-2 transition-transform group-hover:translate-x-2">arrow_right_alt</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Article Grid -->
+<section class="max-w-screen-2xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+<!-- Card 1 -->
+<article class="flex flex-col group">
+<div class="overflow-hidden rounded-xl mb-8 bg-surface-container-low">
+<img alt="Traditional Maasai" class="w-full aspect-[4/5] object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Traditional Maasai warrior standing in the sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJuQnAOhqejkOLUtlQKlsxYoYUrQiAnx9cbv0L30rfT3Nq6auySD-7dlagrN5net56svsrtbGIekQNJgoRkqWOuqWkYarMULj2Vfmo-HsoU9aCkz07fPGzi2o6YPtJ6CFPZZIqWyUzKrVIe6RpSZNfbuXwN5THL9OaCL2MLMfEtTbF1dqgmqKj8svFrLARYSSX2oTmQ7py8Nd18ydq3-xSQumDdW0h-HeUJtLVRUlOItAP4THgtX-FPX3O55nWehpRD12vQBIX1Vtc"/>
+</div>
+<span class="text-secondary font-label text-xs uppercase tracking-widest mb-3">Culture</span>
+<h3 class="text-2xl font-headline font-bold text-primary mb-4 leading-snug">Ancestral Wisdom: A Week with the Maasai</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                        Discover the delicate balance between ancient traditions and modern conservation efforts in the heart of the Mara.
+                    </p>
+<div class="mt-auto pt-4 border-t border-outline-variant/30 flex justify-between items-center">
+<span class="text-xs text-on-surface-variant font-label uppercase">8 min read</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">north_east</span>
+</div>
+</article>
+<!-- Card 2 (Elevated) -->
+<article class="flex flex-col group md:-mt-12">
+<div class="overflow-hidden rounded-xl mb-8 bg-surface-container-low">
+<img alt="Mist over jungle" class="w-full aspect-[4/5] object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Ethereal mist rising from a deep green rainforest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBO5qhUx0goyIZbfKIrS_-KeSyHXa5siZ161yK1UuyW74Y3UPr5zOQrS4Xr1UAIBr--hcTiaozpCFki1BJT1azt9lMyCOexTEAquODU2rXS60IZCfqJ5wYWyt-CcA0l5TCQu1O8yFPEeLZbiXIUL9nut5e2TPeJLKmFOTmhc1Pf00JKH5nu4n7MJQeDs8e_Z9_hI_d0w3UEGBbgKAo6Eoh506Iefd9srAQ1lAQmo_m-dkSG0Y58UiHi8nYvAkrIqqms_UMVlyds4jZ6"/>
+</div>
+<span class="text-secondary font-label text-xs uppercase tracking-widest mb-3">Conservation</span>
+<h3 class="text-2xl font-headline font-bold text-primary mb-4 leading-snug">The Silent Guardians of the Congo Basin</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                        An in-depth look at the front lines of forest elephant protection and the rangers who risk it all.
+                    </p>
+<div class="mt-auto pt-4 border-t border-outline-variant/30 flex justify-between items-center">
+<span class="text-xs text-on-surface-variant font-label uppercase">12 min read</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">north_east</span>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="flex flex-col group">
+<div class="overflow-hidden rounded-xl mb-8 bg-surface-container-low">
+<img alt="Luxury lodge interior" class="w-full aspect-[4/5] object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Luxury safari lodge interior with open view to wilderness" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVALOcTSWRVX1GBJ4dqFIVH4F7LTcV91ukwICPi6FsoL7jny4OfzF-JPnYyq0IN9nnXX9Ip_YgicH7G-hjaGKL7H93QAy2H8kDVOUBx7wNHFx4q_uhCGt88gfXtFsBIUg73BzG2Ydpis353Vr6SL8qjr_J2PXv40nhklvV6YZYeZsFq1WJayW64WAgG31ldV5uCpeGO5ftIc7bj-1_szDF4pG0yEnBoIr_737-3ObsjdoonANiKWoEv9WuBDjEfVxdnTtgmNOCd32U"/>
+</div>
+<span class="text-secondary font-label text-xs uppercase tracking-widest mb-3">Travel Tips</span>
+<h3 class="text-2xl font-headline font-bold text-primary mb-4 leading-snug">The Art of Disconnecting: A Luxury Safari Guide</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                        How to find true solitude in the world's most remote high-end wilderness retreats.
+                    </p>
+<div class="mt-auto pt-4 border-t border-outline-variant/30 flex justify-between items-center">
+<span class="text-xs text-on-surface-variant font-label uppercase">6 min read</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">north_east</span>
+</div>
+</article>
+</div>
+</section>
+<!-- Newsletter Tonal Shift -->
+<section class="mt-32 px-8">
+<div class="max-w-5xl mx-auto bg-surface-container-low rounded-xl overflow-hidden relative">
+<div class="absolute top-0 right-0 w-1/3 h-full opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[20rem] text-primary rotate-12">auto_stories</span>
+</div>
+<div class="p-16 relative z-10 text-center">
+<h2 class="text-4xl font-headline font-bold text-primary mb-4">Join the Inner Circle</h2>
+<p class="text-on-surface-variant max-w-xl mx-auto mb-10 font-body">
+                        Receive monthly dispatches from the field, exclusive photography tips, and early access to curated expeditions.
+                    </p>
+<form class="flex flex-col md:flex-row gap-4 max-w-lg mx-auto">
+<input class="flex-1 bg-surface-container-highest border-none rounded-xl px-6 py-4 focus:ring-2 focus:ring-primary/40 focus:bg-surface-container-lowest transition-all" placeholder="Your email address" type="email"/>
+<button class="bg-primary text-on-primary px-10 py-4 rounded-xl font-body font-bold hover:shadow-lg transition-all active:scale-95">
+                            Subscribe
+                        </button>
+</form>
+</div>
+</div>
+</section>
+<!-- Secondary Grid - Asymmetric Bento -->
+<section class="max-w-screen-2xl mx-auto px-8 mt-32">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="md:col-span-2 bg-surface-container-low rounded-xl p-8 flex flex-col justify-between min-h-[400px]">
+<div>
+<span class="text-secondary font-label text-xs uppercase tracking-widest mb-4 block">Archive Selection</span>
+<h3 class="text-3xl font-headline font-bold text-primary mb-4 italic">Sustainability: Beyond the Buzzword</h3>
+<p class="text-on-surface-variant">Exploring how high-end travel is pivoting to regenerative models that protect local ecosystems for generations to come.</p>
+</div>
+<a class="text-primary font-bold uppercase text-xs tracking-widest flex items-center group" href="#">
+                        Explore Archive <span class="material-symbols-outlined ml-2 text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="md:col-span-1 rounded-xl overflow-hidden relative group">
+<img alt="Giraffes at sunrise" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Silhouetted giraffes walking against a vibrant orange sunrise" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiI2r2CDn5zKFb53ZRM0GuPVA69wsgdBpEsi7cwDI1lmIlg98vJ7E6_gahb9YwFdGweKcnNgQijZFK79Atu6EXjCpXE3wRAMjriBzoSFE9BmmQf7DDQiKULLcelp8bcdwdz4nqYHmFdoKIAHLE8_Md5mxZXUhfr3YWIyyAEn3Sb9spn2Ybpi06CwGxD0o3NGpkFSLUPpa0JuyXf2bxMErV5VuMOTCCYorW8evXsClrrJ0a6YaEvbjRZAZOXBdtzQokyOzL29Xh3j6C"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<h4 class="text-white font-headline font-bold text-xl">The Horizon Series</h4>
+</div>
+</div>
+<div class="md:col-span-1 rounded-xl overflow-hidden relative group">
+<img alt="Abstract texture" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close up of elephant skin showing detailed grey textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1LhdgSFLBvJClgV65CkCrNhdi0Vmyxk2y3uAE87s0hCiO0BFMO40slIiL5EWzwyqFukCtzz7YOM4rEH6P3XybKmRUSnsB7vDeCjVqg-dl9iIucxbQEvjsiJ5Fb5uOB4I6owK5xqy_DfUIvcCxlIWJ8RyP7Hji-TUjnIYT9JfbKHBjVEBWXcJZhBtlrtvAX4xNaRtpOsRXmSW8y_PjJ5FseVJvybdTVTIo3LfQB0PmHR3Jc58WLHcnGKE2UJbK14WU3MQReLhZFFNu"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<h4 class="text-white font-headline font-bold text-xl">Tactile Nature</h4>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f6f3f2] dark:bg-[#141515] w-full rounded-t-none">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 max-w-screen-2xl mx-auto">
+<div class="md:col-span-1">
+<div class="text-xl font-['Noto_Serif'] text-[#17341d] dark:text-[#fcf9f8] mb-6">
+                    The Elevated Explorer
+                </div>
+<p class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 font-['Plus_Jakarta_Sans'] text-sm leading-relaxed">
+                    Crafting immersive journeys and editorial narratives for the modern wanderer since 2012.
+                </p>
+</div>
+<div>
+<h4 class="font-headline font-bold text-primary mb-6">Explore</h4>
+<ul class="space-y-4">
+<li><a class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 font-['Plus_Jakarta_Sans'] text-sm hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00]" href="#">Expeditions</a></li>
+<li><a class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 font-['Plus_Jakarta_Sans'] text-sm hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00]" href="#">Experience</a></li>
+<li><a class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 font-['Plus_Jakarta_Sans'] text-sm hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00]" href="#">Sustainability</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline font-bold text-primary mb-6">Journal</h4>
+<ul class="space-y-4">
+<li><a class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 font-['Plus_Jakarta_Sans'] text-sm hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00]" href="#">Photography</a></li>
+<li><a class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 font-['Plus_Jakarta_Sans'] text-sm hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00]" href="#">Conservation</a></li>
+<li><a class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 font-['Plus_Jakarta_Sans'] text-sm hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00]" href="#">Field Notes</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline font-bold text-primary mb-6">Legal</h4>
+<ul class="space-y-4">
+<li><a class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 font-['Plus_Jakarta_Sans'] text-sm hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00]" href="#">Privacy Policy</a></li>
+<li><a class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 font-['Plus_Jakarta_Sans'] text-sm hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00]" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<div class="px-12 py-8 border-t border-outline-variant/20 max-w-screen-2xl mx-auto">
+<p class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 font-['Plus_Jakarta_Sans'] text-xs text-center">
+                © 2024 The Elevated Explorer. All rights reserved.
+            </p>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+:root {
+  /* Safari color scales — OKLCH for perceptual uniformity */
+  --safari-green-50:  oklch(0.97 0.02 155);
+  --safari-green-100: oklch(0.93 0.04 155);
+  --safari-green-200: oklch(0.85 0.06 155);
+  --safari-green-300: oklch(0.72 0.08 155);
+  --safari-green-400: oklch(0.55 0.09 155);
+  --safari-green-500: oklch(0.42 0.09 155);
+  --safari-green-600: oklch(0.35 0.08 155);
+  --safari-green-700: oklch(0.30 0.07 155);
+  --safari-green-800: oklch(0.25 0.06 155);
+  --safari-green-900: oklch(0.20 0.05 155);
+
+  --safari-amber-50:  oklch(0.97 0.03 80);
+  --safari-amber-100: oklch(0.93 0.06 78);
+  --safari-amber-200: oklch(0.88 0.10 76);
+  --safari-amber-300: oklch(0.82 0.14 75);
+  --safari-amber-400: oklch(0.76 0.16 74);
+  --safari-amber-500: oklch(0.72 0.17 75);
+  --safari-amber-600: oklch(0.62 0.16 70);
+  --safari-amber-700: oklch(0.52 0.14 65);
+  --safari-amber-800: oklch(0.42 0.11 60);
+  --safari-amber-900: oklch(0.35 0.08 55);
+
+  --safari-brown-50:  oklch(0.96 0.01 60);
+  --safari-brown-100: oklch(0.90 0.02 58);
+  --safari-brown-200: oklch(0.82 0.04 55);
+  --safari-brown-300: oklch(0.70 0.05 55);
+  --safari-brown-400: oklch(0.58 0.06 55);
+  --safari-brown-500: oklch(0.48 0.06 55);
+  --safari-brown-600: oklch(0.40 0.05 55);
+  --safari-brown-700: oklch(0.33 0.04 55);
+  --safari-brown-800: oklch(0.27 0.03 55);
+  --safari-brown-900: oklch(0.22 0.03 55);
+}
+
+@theme inline {
+  /* Sunset palette — burnt-orange primary, golden-ochre secondary.
+     Tuned so text-primary stays legible on cream and white stays legible
+     on bg-primary buttons. */
+  --color-primary: oklch(0.47 0.15 48);
+  --color-primary-container: oklch(0.41 0.13 42);
+  --color-secondary: oklch(0.47 0.13 66);
+  --color-secondary-container: oklch(0.74 0.15 68);
+  --color-surface: #fcf9f8;
+  --color-surface-dim: #dcd9d9;
+  --color-surface-container-low: #f6f3f2;
+  --color-surface-container: #f0eded;
+  --color-surface-container-high: #eae7e7;
+  --color-surface-container-highest: #e4e2e1;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-surface: #1b1c1c;
+  --color-on-surface-variant: #424842;
+  --color-on-primary: #ffffff;
+  --color-outline: #737971;
+  --color-outline-variant: #c2c8bf;
+  --color-error: #ba1a1a;
+  --color-tertiary: var(--safari-brown-500);
+  --color-tertiary-container: var(--safari-brown-300);
+
+  --color-safari-green-50: var(--safari-green-50);
+  --color-safari-green-100: var(--safari-green-100);
+  --color-safari-green-200: var(--safari-green-200);
+  --color-safari-green-300: var(--safari-green-300);
+  --color-safari-green-400: var(--safari-green-400);
+  --color-safari-green-500: var(--safari-green-500);
+  --color-safari-green-600: var(--safari-green-600);
+  --color-safari-green-700: var(--safari-green-700);
+  --color-safari-green-800: var(--safari-green-800);
+  --color-safari-green-900: var(--safari-green-900);
+
+  --color-safari-amber-50: var(--safari-amber-50);
+  --color-safari-amber-100: var(--safari-amber-100);
+  --color-safari-amber-200: var(--safari-amber-200);
+  --color-safari-amber-300: var(--safari-amber-300);
+  --color-safari-amber-400: var(--safari-amber-400);
+  --color-safari-amber-500: var(--safari-amber-500);
+  --color-safari-amber-600: var(--safari-amber-600);
+  --color-safari-amber-700: var(--safari-amber-700);
+  --color-safari-amber-800: var(--safari-amber-800);
+  --color-safari-amber-900: var(--safari-amber-900);
+
+  --color-safari-brown-50: var(--safari-brown-50);
+  --color-safari-brown-100: var(--safari-brown-100);
+  --color-safari-brown-200: var(--safari-brown-200);
+  --color-safari-brown-300: var(--safari-brown-300);
+  --color-safari-brown-400: var(--safari-brown-400);
+  --color-safari-brown-500: var(--safari-brown-500);
+  --color-safari-brown-600: var(--safari-brown-600);
+  --color-safari-brown-700: var(--safari-brown-700);
+  --color-safari-brown-800: var(--safari-brown-800);
+  --color-safari-brown-900: var(--safari-brown-900);
+
+  --font-heading: var(--font-heading);
+  --font-body: var(--font-body);
+}
+
+.bg-glass {
+  background-color: rgba(252, 249, 248, 0.8);
+  backdrop-filter: blur(20px);
+}
+
+.primary-gradient {
+  background: linear-gradient(135deg, #c75321 0%, #7e2c12 100%);
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}

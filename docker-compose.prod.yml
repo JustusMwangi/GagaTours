@@ -1,0 +1,89 @@
+services:
+  api:
+    build: ./admin/backend
+    container_name: sheilla_api
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:5002:5000"
+    environment:
+      - FLASK_ENV=production
+      - DATABASE_URL=postgresql://petro:%40Peter2023%23@host.docker.internal:5432/book_sheilla
+      - SECRET_KEY=${SECRET_KEY}
+      - JWT_SECRET_KEY=${JWT_SECRET_KEY}
+      - CORS_ORIGINS=https://bookwithsheilla.com,https://app.bookwithsheilla.com
+      - FRONTEND_URL=https://app.bookwithsheilla.com
+      - MINIO_ENDPOINT=storage.sokosuite.com
+      - MINIO_ACCESS_KEY=${MINIO_ACCESS_KEY}
+      - MINIO_SECRET_KEY=${MINIO_SECRET_KEY}
+      - MINIO_BUCKET=sheilla-book
+      - MINIO_SECURE=true
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+      - MAIL_SERVER=email-smtp.us-east-1.amazonaws.com
+      - MAIL_PORT=587
+      - MAIL_USE_TLS=true
+      - MAIL_USERNAME=${MAIL_USERNAME}
+      - MAIL_PASSWORD=${MAIL_PASSWORD}
+      - MAIL_DEFAULT_SENDER=${MAIL_DEFAULT_SENDER}
+      - MAIL_REPLY_TO=${MAIL_REPLY_TO}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      - redis
+
+  celery_worker:
+    build: ./admin/backend
+    container_name: sheilla_celery_worker
+    restart: unless-stopped
+    command: celery -A celery_worker:celery_app worker --loglevel=info
+    environment:
+      - FLASK_ENV=production
+      - DATABASE_URL=postgresql://petro:%40Peter2023%23@host.docker.internal:5432/book_sheilla
+      - SECRET_KEY=${SECRET_KEY}
+      - JWT_SECRET_KEY=${JWT_SECRET_KEY}
+      - CORS_ORIGINS=https://bookwithsheilla.com,https://app.bookwithsheilla.com
+      - FRONTEND_URL=https://app.bookwithsheilla.com
+      - MINIO_ENDPOINT=storage.sokosuite.com
+      - MINIO_ACCESS_KEY=${MINIO_ACCESS_KEY}
+      - MINIO_SECRET_KEY=${MINIO_SECRET_KEY}
+      - MINIO_BUCKET=sheilla-book
+      - MINIO_SECURE=true
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+      - MAIL_SERVER=email-smtp.us-east-1.amazonaws.com
+      - MAIL_PORT=587
+      - MAIL_USE_TLS=true
+      - MAIL_USERNAME=${MAIL_USERNAME}
+      - MAIL_PASSWORD=${MAIL_PASSWORD}
+      - MAIL_DEFAULT_SENDER=${MAIL_DEFAULT_SENDER}
+      - MAIL_REPLY_TO=${MAIL_REPLY_TO}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:7-alpine
+    container_name: sheilla_redis
+    restart: unless-stopped
+
+  public-site:
+    build:
+      context: ./public-site
+      args:
+        NEXT_PUBLIC_API_URL: https://api.bookwithsheilla.com/api/v1/public
+    container_name: sheilla_public
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:3003:3000"
+
+  admin-client:
+    build:
+      context: ./admin/client
+      args:
+        VITE_BASE_URL: https://api.bookwithsheilla.com/api/v1
+        VITE_API_ORIGIN: https://api.bookwithsheilla.com
+    container_name: sheilla_admin
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8081:80"

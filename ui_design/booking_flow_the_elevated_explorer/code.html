@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-container": "#baaa79",
+              "secondary-fixed-dim": "#ffb77d",
+              "surface-dim": "#dcd9d9",
+              "secondary-container": "#fe932c",
+              "primary-fixed-dim": "#adcfae",
+              "surface-container-low": "#f6f3f2",
+              "on-error": "#ffffff",
+              "tertiary-fixed": "#f3e2ac",
+              "on-primary-fixed-variant": "#2f4d34",
+              "tertiary": "#6a5e33",
+              "surface-tint": "#47664b",
+              "surface-container-high": "#eae7e7",
+              "on-primary-container": "#98ba9a",
+              "on-primary": "#ffffff",
+              "outline-variant": "#c2c8bf",
+              "outline": "#737971",
+              "tertiary-fixed-dim": "#d6c692",
+              "secondary-fixed": "#ffdcc3",
+              "on-secondary": "#ffffff",
+              "on-error-container": "#93000a",
+              "on-tertiary-fixed-variant": "#51461e",
+              "on-secondary-container": "#663500",
+              "inverse-on-surface": "#f3f0ef",
+              "on-secondary-fixed": "#2f1500",
+              "on-tertiary-fixed": "#231b00",
+              "on-surface-variant": "#424842",
+              "background": "#fcf9f8",
+              "inverse-primary": "#adcfae",
+              "error-container": "#ffdad6",
+              "surface-bright": "#fcf9f8",
+              "on-tertiary-container": "#493e17",
+              "surface-container-highest": "#e4e2e1",
+              "primary-fixed": "#c8ecc9",
+              "secondary": "#904d00",
+              "on-surface": "#1b1c1c",
+              "on-primary-fixed": "#03210c",
+              "error": "#ba1a1a",
+              "primary": "#17341d",
+              "surface-variant": "#e4e2e1",
+              "surface": "#fcf9f8",
+              "surface-container": "#f0eded",
+              "on-tertiary": "#ffffff",
+              "inverse-surface": "#303030",
+              "primary-container": "#2d4b32",
+              "on-secondary-fixed-variant": "#6e3900",
+              "on-background": "#1b1c1c",
+              "surface-container-lowest": "#ffffff"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        h1, h2, h3 { font-family: 'Noto Serif', serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- Top Navigation (Shell Suppressed/Simplified for Focused Checkout Flow) -->
+<nav class="fixed top-0 w-full z-50 bg-[#fcf9f8]/80 backdrop-blur-xl transition-all duration-300">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 py-6">
+<a class="text-2xl font-serif italic text-[#17341d]" href="#">The Elevated Explorer</a>
+<div class="flex items-center gap-6">
+<div class="hidden md:flex items-center gap-2 text-on-surface-variant text-sm font-label tracking-wider">
+<span class="material-symbols-outlined text-sm" data-icon="lock">lock</span>
+                    SECURE CHECKOUT
+                </div>
+<button class="p-2 hover:bg-surface-container-low rounded-full transition-all">
+<span class="material-symbols-outlined" data-icon="close">close</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-8 max-w-7xl mx-auto">
+<div class="flex flex-col lg:grid lg:grid-cols-12 gap-16">
+<!-- Left Column: Checkout Steps -->
+<div class="lg:col-span-7 space-y-16">
+<!-- Progress Indicator -->
+<div class="flex items-center gap-4 text-xs font-label tracking-widest uppercase">
+<span class="text-primary font-bold">01 Dates</span>
+<span class="w-8 h-[1px] bg-outline-variant"></span>
+<span class="text-on-surface-variant/40">02 Guests</span>
+<span class="w-8 h-[1px] bg-outline-variant"></span>
+<span class="text-on-surface-variant/40">03 Payment</span>
+</div>
+<!-- Step 1: Selection -->
+<section class="space-y-10">
+<header>
+<h1 class="text-5xl md:text-6xl font-headline mb-4">Confirm your journey.</h1>
+<p class="text-on-surface-variant max-w-lg leading-relaxed">Choose the window of your escape. Our curated itineraries are designed around the lunar cycles of the Serengeti.</p>
+</header>
+<!-- Date Selection Grid -->
+<div class="bg-surface-container-low p-8 rounded-xl space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="block text-xs font-label tracking-widest text-on-surface-variant uppercase ml-1">Arrival</label>
+<div class="relative">
+<input class="w-full bg-surface-container-lowest border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/40 text-on-surface transition-all" type="date" value="2024-10-12"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="block text-xs font-label tracking-widest text-on-surface-variant uppercase ml-1">Departure</label>
+<div class="relative">
+<input class="w-full bg-surface-container-lowest border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/40 text-on-surface transition-all" type="date" value="2024-10-19"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Guest Details Form -->
+<div class="space-y-8">
+<h2 class="text-3xl font-headline">Guest Information</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="md:col-span-2 flex flex-col gap-2">
+<label class="text-xs font-label tracking-widest text-on-surface-variant uppercase ml-1">Full Name</label>
+<input class="w-full bg-surface-container-low border-none rounded-xl p-4 focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/40 transition-all" placeholder="Julian Montgomery" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-xs font-label tracking-widest text-on-surface-variant uppercase ml-1">Email Address</label>
+<input class="w-full bg-surface-container-low border-none rounded-xl p-4 focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/40 transition-all" placeholder="j.montgomery@curator.com" type="email"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-xs font-label tracking-widest text-on-surface-variant uppercase ml-1">Phone Number</label>
+<input class="w-full bg-surface-container-low border-none rounded-xl p-4 focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/40 transition-all" placeholder="+44 7700 900000" type="tel"/>
+</div>
+</div>
+</div>
+<!-- Payment Section -->
+<div class="space-y-8">
+<div class="flex justify-between items-end">
+<h2 class="text-3xl font-headline">Secure Payment</h2>
+<div class="flex gap-2">
+<div class="w-10 h-6 bg-surface-container-high rounded-sm opacity-60"></div>
+<div class="w-10 h-6 bg-surface-container-high rounded-sm opacity-60"></div>
+<div class="w-10 h-6 bg-surface-container-high rounded-sm opacity-60"></div>
+</div>
+</div>
+<div class="p-8 bg-surface-container-low rounded-xl space-y-6">
+<div class="flex flex-col gap-2">
+<label class="text-xs font-label tracking-widest text-on-surface-variant uppercase ml-1">Card Number</label>
+<div class="relative">
+<input class="w-full bg-surface-container-lowest border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/40 transition-all" placeholder="0000 0000 0000 0000" type="text"/>
+<span class="absolute right-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-outline" data-icon="credit_card">credit_card</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-6">
+<div class="flex flex-col gap-2">
+<label class="text-xs font-label tracking-widest text-on-surface-variant uppercase ml-1">Expiry Date</label>
+<input class="w-full bg-surface-container-lowest border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/40 transition-all" placeholder="MM/YY" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-xs font-label tracking-widest text-on-surface-variant uppercase ml-1">CVV</label>
+<input class="w-full bg-surface-container-lowest border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/40 transition-all" placeholder="***" type="password"/>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-8">
+<button class="w-full md:w-auto px-12 py-5 bg-primary text-on-primary rounded-xl font-medium text-lg hover:shadow-2xl hover:bg-gradient-to-br from-primary to-primary-container transition-all duration-300 transform active:scale-95">
+                            Complete Reservation
+                        </button>
+<p class="mt-4 text-xs text-on-surface-variant/60 text-center md:text-left italic">By clicking "Complete Reservation", you agree to our curator's terms of service and conservation pledge.</p>
+</div>
+</section>
+</div>
+<!-- Right Column: Summary Card (Floating Design) -->
+<div class="lg:col-span-5">
+<div class="sticky top-32 space-y-8">
+<div class="bg-surface-container-low rounded-xl overflow-hidden shadow-2xl shadow-on-surface/5">
+<!-- Summary Header Image -->
+<div class="relative h-48 overflow-hidden">
+<img alt="Safari horizon" class="w-full h-full object-cover" data-alt="Golden hour view of Serengeti horizon with acacia trees" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6fi7n6s0e-BUX23_PRYHXcmDOJ6dFxHknlj-GO2q3FESqGaB8EaKxIWy0FP6a7wN2qaI-UdjsE-zqKB0nlgfGCTj-8Zg38zinDoedZ5hgKAdo9HrsG7XMT1nMxAf9joVNpeOeV198g8vv1LYzG_a6TRqPqebQGLDw9pt-X7ueiglKNbTp9qKpfHgx_FDnMwzJ2Rt18RSONL7DwMQlXL8MihPs9w1rOro0alEQtjTf31d5xKBtbv9LYNdQgpYocSHxgpptmiib9AAb"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-6 left-6 text-white">
+<h3 class="text-2xl font-headline">Serengeti Horizon Expedition</h3>
+<p class="text-xs uppercase tracking-widest font-label opacity-80">7 Nights • All-Inclusive</p>
+</div>
+</div>
+<!-- Summary Content -->
+<div class="p-8 space-y-8">
+<div class="space-y-4">
+<div class="flex justify-between items-start">
+<div>
+<p class="text-xs font-label tracking-widest text-on-surface-variant uppercase">Accommodation</p>
+<p class="text-lg font-medium">The Elevated Tented Suite</p>
+</div>
+<span class="material-symbols-outlined text-secondary" data-icon="stars" style="font-variation-settings: 'FILL' 1;">stars</span>
+</div>
+<div class="flex items-center gap-4 py-4 border-y border-outline-variant/20">
+<div class="flex-1">
+<p class="text-xs font-label tracking-widest text-on-surface-variant uppercase">Dates</p>
+<p class="text-sm font-medium">Oct 12 — Oct 19, 2024</p>
+</div>
+<div class="flex-1 text-right">
+<p class="text-xs font-label tracking-widest text-on-surface-variant uppercase">Guests</p>
+<p class="text-sm font-medium">2 Adults</p>
+</div>
+</div>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between text-sm">
+<span class="text-on-surface-variant">Base Rate (7 Nights)</span>
+<span>$12,400.00</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="text-on-surface-variant">Conservation &amp; Park Fees</span>
+<span>$850.00</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="text-on-surface-variant">Private Butler Service</span>
+<span class="text-secondary font-medium">Included</span>
+</div>
+<div class="pt-6 mt-6 border-t border-outline-variant/40 flex justify-between items-baseline">
+<span class="text-lg font-headline">Total Investment</span>
+<div class="text-right">
+<p class="text-3xl font-headline text-primary">$13,250.00</p>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-tighter">Taxes &amp; Transfers included</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Trust Indicators -->
+<div class="grid grid-cols-2 gap-4">
+<div class="p-6 bg-surface-container-lowest rounded-xl flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary" data-icon="verified_user">verified_user</span>
+<span class="text-xs font-label uppercase tracking-wider leading-tight">Protected Booking</span>
+</div>
+<div class="p-6 bg-surface-container-lowest rounded-xl flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary" data-icon="nature_people">nature_people</span>
+<span class="text-xs font-label uppercase tracking-wider leading-tight">100% Carbon Neutral</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer (Using Shell Data) -->
+<footer class="w-full pt-20 pb-10 bg-[#f6f3f2] border-t border-outline-variant/10">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 max-w-7xl mx-auto px-8">
+<div class="space-y-6">
+<span class="text-xl font-serif text-[#17341d]">The Elevated Explorer</span>
+<p class="text-[#1b1c1c]/60 text-sm leading-relaxed">Crafting bespoke expeditions for the digital curator and the soulful wanderer.</p>
+</div>
+<div class="space-y-4">
+<h4 class="text-xs font-label uppercase tracking-[0.2em] font-bold text-[#17341d]">Navigation</h4>
+<ul class="space-y-2">
+<li><a class="text-sm font-label uppercase tracking-widest text-[#1b1c1c]/60 hover:text-[#17341d] transition-colors" href="#">Sustainability</a></li>
+<li><a class="text-sm font-label uppercase tracking-widest text-[#1b1c1c]/60 hover:text-[#17341d] transition-colors" href="#">Terms of Service</a></li>
+<li><a class="text-sm font-label uppercase tracking-widest text-[#1b1c1c]/60 hover:text-[#17341d] transition-colors" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="text-xs font-label uppercase tracking-[0.2em] font-bold text-[#17341d]">Connection</h4>
+<ul class="space-y-2">
+<li><a class="text-sm font-label uppercase tracking-widest text-[#1b1c1c]/60 hover:text-[#17341d] transition-colors" href="#">Contact Us</a></li>
+<li><a class="text-sm font-label uppercase tracking-widest text-[#1b1c1c]/60 hover:text-[#17341d] transition-colors" href="#">Partner Program</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="text-xs font-label uppercase tracking-[0.2em] font-bold text-[#17341d]">Our Footprint</h4>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary/40" data-icon="eco">eco</span>
+<span class="material-symbols-outlined text-primary/40" data-icon="water_drop">water_drop</span>
+<span class="material-symbols-outlined text-primary/40" data-icon="filter_vintage">filter_vintage</span>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-20 border-t border-outline-variant/20 pt-10">
+<p class="text-xs font-label uppercase tracking-widest text-[#1b1c1c]/40">© 2024 The Elevated Explorer. All rights reserved. Crafted for the digital curator.</p>
+</div>
+</footer>
+</body></html>

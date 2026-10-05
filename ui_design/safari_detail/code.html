@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Elevated Explorer | Serengeti Soul Safari</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-fixed": "#231b00",
+              "secondary-container": "#fe932c",
+              "outline": "#737971",
+              "primary-fixed": "#c8ecc9",
+              "error": "#ba1a1a",
+              "secondary-fixed-dim": "#ffb77d",
+              "on-tertiary": "#ffffff",
+              "on-primary": "#ffffff",
+              "surface-tint": "#47664b",
+              "error-container": "#ffdad6",
+              "on-tertiary-fixed-variant": "#51461e",
+              "inverse-surface": "#303030",
+              "on-secondary": "#ffffff",
+              "tertiary-fixed": "#f3e2ac",
+              "surface-variant": "#e4e2e1",
+              "on-error-container": "#93000a",
+              "primary-fixed-dim": "#adcfae",
+              "surface-container-lowest": "#ffffff",
+              "on-primary-container": "#98ba9a",
+              "on-secondary-container": "#663500",
+              "on-secondary-fixed-variant": "#6e3900",
+              "secondary": "#904d00",
+              "surface-container-highest": "#e4e2e1",
+              "on-primary-fixed-variant": "#2f4d34",
+              "surface-bright": "#fcf9f8",
+              "surface-container": "#f0eded",
+              "tertiary": "#6a5e33",
+              "primary": "#17341d",
+              "outline-variant": "#c2c8bf",
+              "surface-container-low": "#f6f3f2",
+              "on-tertiary-container": "#493e17",
+              "surface-container-high": "#eae7e7",
+              "on-background": "#1b1c1c",
+              "primary-container": "#2d4b32",
+              "surface-dim": "#dcd9d9",
+              "secondary-fixed": "#ffdcc3",
+              "on-surface-variant": "#424842",
+              "inverse-on-surface": "#f3f0ef",
+              "on-primary-fixed": "#03210c",
+              "on-surface": "#1b1c1c",
+              "tertiary-fixed-dim": "#d6c692",
+              "inverse-primary": "#adcfae",
+              "on-error": "#ffffff",
+              "surface": "#fcf9f8",
+              "tertiary-container": "#baaa79",
+              "on-secondary-fixed": "#2f1500",
+              "background": "#fcf9f8"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .noto-serif { font-family: 'Noto Serif', serif; }
+        .plus-jakarta { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fcf9f8]/80 backdrop-blur-xl">
+<div class="flex justify-between items-center w-full px-8 py-6 max-w-[1920px] mx-auto">
+<div class="text-2xl font-serif italic text-primary">The Elevated Explorer</div>
+<div class="hidden md:flex items-center space-x-10">
+<a class="text-on-background/70 hover:text-primary plus-jakarta text-xs uppercase tracking-wider transition-colors" href="#">Destinations</a>
+<a class="text-primary border-b-2 border-secondary pb-1 plus-jakarta text-xs uppercase tracking-wider transition-colors" href="#">Safaris</a>
+<a class="text-on-background/70 hover:text-primary plus-jakarta text-xs uppercase tracking-wider transition-colors" href="#">Experiences</a>
+<a class="text-on-background/70 hover:text-primary plus-jakarta text-xs uppercase tracking-wider transition-colors" href="#">Our Story</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="p-2 hover:bg-surface-container-low rounded-full transition-colors">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+</button>
+<button class="p-2 hover:bg-surface-container-low rounded-full transition-colors">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero & Gallery Bento -->
+<section class="px-8 max-w-[1440px] mx-auto mb-24">
+<div class="grid grid-cols-12 gap-6 h-[700px]">
+<div class="col-span-12 lg:col-span-8 relative overflow-hidden rounded-xl group">
+<img alt="Main Safari View" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A majestic elephant walking through the golden savannah at sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDODTqOJ1QmrUr299zqOfRpkMjxXFH3QwRK77qLmp62j8iB_hFrmE5XsLgJAQhTCA4DInJjxqKO3nBzI2dVt5G_GfViGeTyF7xRuru-t5puU-NZuyQUFStj-LpWUKC9DiWY_tamrIamLgebYGqNh0HGdTKE_N7Fw1MTQJPZSNqEQNLuHPPaL-z9Bdbfdxkm28EMkPKh7IS6vjf35Cn0ay4SzyTCggeuNtvnQgf53xPflZn2Tzj4aEOUZ3VWQiLqKHv-XVhvIMSgYyHo"/>
+<div class="absolute bottom-8 left-8 bg-surface/80 backdrop-blur-xl p-6 rounded-lg max-w-md">
+<span class="plus-jakarta text-xs uppercase tracking-widest text-secondary font-semibold mb-2 block">Tanzania Heritage</span>
+<h1 class="noto-serif text-4xl lg:text-5xl text-primary leading-tight mb-2">Serengeti Soul Safari</h1>
+<p class="plus-jakarta text-on-surface-variant font-light">An immersive 8-day journey through the heart of the wild.</p>
+</div>
+</div>
+<div class="hidden lg:grid col-span-4 grid-rows-2 gap-6">
+<div class="relative overflow-hidden rounded-xl">
+<img alt="Luxury Camp" class="w-full h-full object-cover" data-alt="A luxury safari tent overlooking a valley at dusk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLoTeoLQKEpey8j14yZ5aEzjyv0wLlsbhxGJFC3S_6xd4cOBjAFZkR71_Tzz4A5x3LM2MZDe5OmZ2xq-VeEN923nsM3y7HwipH03gEWYjstlu5zchAdUqdpouYJEwz6UsxcZR8z2Z5-OkRFJB_4_8LcseVofp6mplilE6Y5fCVNHg9-SpytG1AyUrDRagB19PuJUxFT5kz7m2P7EFbgbvWe1w_SmaVcZp5ulztuKFtyjuTcBk3V-OiusLrZtGPrCoEVSpaatfdXcAg"/>
+</div>
+<div class="relative overflow-hidden rounded-xl">
+<img alt="Leopard in tree" class="w-full h-full object-cover" data-alt="A spotted leopard resting on a large acacia branch" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOH7Tbl6-hOoOb3zgNgqEmWZO9NT_vywdkp3ea85AzX_S_532sxyHXl0TrcarriPju15AN8jbfLCPe6DeJrZKxRSFVk9UECWVvBXb7xjZDwhbsfgiYPF7PA93mgZ0lUtf-MLMVixNNUTUwvynLBlWzgji3ZZ9uu-izXDKE5HupQtsFcFbDCk1adALS9GRttGiLEqBSmqm32nggQlYg2UD4p2-ZKGuaHxFZqbe7WJW6Qy1c2hW4zgtoe7D5yecVOQJxG8E0wktyQlsg"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Details Grid -->
+<section class="px-8 max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 mb-32">
+<!-- Left Content: Description & Itinerary -->
+<div class="lg:col-span-8">
+<div class="mb-16">
+<h2 class="noto-serif text-3xl text-primary mb-6">The Curated Experience</h2>
+<p class="plus-jakarta text-lg leading-relaxed text-on-surface-variant font-light mb-8">
+                        The Serengeti Soul Safari is not merely a trip; it is a pilgrimage to the cradle of life. We depart from the traditional tourist trails to find the silent spaces where the Great Migration breathes. From the dawn chorus of the savannah to the silver-light dinners under ancient baobabs, every moment is hand-selected by our master trackers.
+                    </p>
+<div class="flex flex-wrap gap-8 py-8 border-y border-outline-variant/20">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" data-icon="calendar_today">calendar_today</span>
+<div>
+<p class="plus-jakarta text-[10px] uppercase tracking-tighter text-on-surface-variant">Duration</p>
+<p class="plus-jakarta font-semibold text-primary">8 Days / 7 Nights</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" data-icon="group">group</span>
+<div>
+<p class="plus-jakarta text-[10px] uppercase tracking-tighter text-on-surface-variant">Group Size</p>
+<p class="plus-jakarta font-semibold text-primary">Max 6 Guests</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" data-icon="star">star</span>
+<div>
+<p class="plus-jakarta text-[10px] uppercase tracking-tighter text-on-surface-variant">Level</p>
+<p class="plus-jakarta font-semibold text-primary">Ultra-Luxury</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Itinerary -->
+<div class="space-y-12">
+<h3 class="noto-serif text-2xl text-primary">The Passage</h3>
+<div class="relative pl-12 before:content-[''] before:absolute before:left-4 before:top-2 before:bottom-0 before:w-[1px] before:bg-outline-variant/30">
+<!-- Day 1 -->
+<div class="relative mb-12">
+<div class="absolute -left-12 top-0 w-8 h-8 rounded-full bg-primary flex items-center justify-center z-10">
+<span class="plus-jakarta text-white text-[10px] font-bold">01</span>
+</div>
+<h4 class="plus-jakarta font-bold text-primary mb-2">The Arrival | Arusha to Serengeti</h4>
+<p class="plus-jakarta text-on-surface-variant font-light">Touch down in the endless plains via private charter. Your curator will meet you for a sundowner session as the shadows of the acacia lengthen across the valley floor.</p>
+</div>
+<!-- Day 2-3 -->
+<div class="relative mb-12">
+<div class="absolute -left-12 top-0 w-8 h-8 rounded-full bg-surface-container-highest border border-outline-variant flex items-center justify-center z-10">
+<span class="plus-jakarta text-primary text-[10px] font-bold">02</span>
+</div>
+<h4 class="plus-jakarta font-bold text-primary mb-2">The Pulse of the Migration</h4>
+<p class="plus-jakarta text-on-surface-variant font-light">Track the massive herds of wildebeest and zebra. We set up an exclusive mobile camp in the path of the movement, ensuring you are at the heart of the action with zero crowds.</p>
+</div>
+<!-- Day 4-5 -->
+<div class="relative mb-12">
+<div class="absolute -left-12 top-0 w-8 h-8 rounded-full bg-surface-container-highest border border-outline-variant flex items-center justify-center z-10">
+<span class="plus-jakarta text-primary text-[10px] font-bold">04</span>
+</div>
+<h4 class="plus-jakarta font-bold text-primary mb-2">Predators &amp; Peaks</h4>
+<p class="plus-jakarta text-on-surface-variant font-light">Shift focus to the big cats. Private game drives led by expert naturalists focus on leopard sightings and lion pride dynamics in the rocky kopjes.</p>
+</div>
+<!-- Day 6-8 -->
+<div class="relative">
+<div class="absolute -left-12 top-0 w-8 h-8 rounded-full bg-surface-container-highest border border-outline-variant flex items-center justify-center z-10">
+<span class="plus-jakarta text-primary text-[10px] font-bold">06</span>
+</div>
+<h4 class="plus-jakarta font-bold text-primary mb-2">The Ngorongoro Descent</h4>
+<p class="plus-jakarta text-on-surface-variant font-light">Complete the journey with a descent into the ancient crater. A final gala dinner under the Tanzanian stars before your return flight to Arusha.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Sidebar: Booking & What's Included -->
+<div class="lg:col-span-4 space-y-8">
+<!-- Booking Widget -->
+<div class="bg-surface-container-low p-8 rounded-xl shadow-sm sticky top-32">
+<div class="mb-6">
+<p class="plus-jakarta text-xs uppercase tracking-widest text-on-surface-variant mb-1">Starting from</p>
+<h4 class="noto-serif text-4xl text-primary font-bold">$12,450 <span class="text-sm font-normal text-on-surface-variant">/ person</span></h4>
+</div>
+<div class="space-y-4 mb-8">
+<div class="flex justify-between items-center py-3 border-b border-outline-variant/10">
+<span class="plus-jakarta text-sm">Next Availability</span>
+<span class="plus-jakarta text-sm font-semibold">Oct 14, 2024</span>
+</div>
+<div class="flex justify-between items-center py-3 border-b border-outline-variant/10">
+<span class="plus-jakarta text-sm">Accommodation</span>
+<span class="plus-jakarta text-sm font-semibold">Private Lodge</span>
+</div>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded-lg plus-jakarta font-bold text-sm tracking-widest uppercase shadow-lg hover:shadow-primary/20 transition-all active:scale-[0.98] bg-gradient-to-br from-primary to-primary-container">
+                        Book Your Journey
+                    </button>
+<p class="text-center mt-4 plus-jakarta text-[10px] text-on-surface-variant uppercase tracking-widest">Inquiry response within 12 hours</p>
+<div class="mt-12">
+<h5 class="plus-jakarta text-xs font-bold uppercase tracking-widest text-primary mb-6">What's Included</h5>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="check_circle">check_circle</span>
+<span class="plus-jakarta text-sm text-on-surface-variant leading-tight">All luxury lodge &amp; bush camp stays</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="check_circle">check_circle</span>
+<span class="plus-jakarta text-sm text-on-surface-variant leading-tight">Private naturalist guide &amp; 4x4 vehicle</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="check_circle">check_circle</span>
+<span class="plus-jakarta text-sm text-on-surface-variant leading-tight">All internal charter flights</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="check_circle">check_circle</span>
+<span class="plus-jakarta text-sm text-on-surface-variant leading-tight">All-inclusive gourmet dining &amp; spirits</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="check_circle">check_circle</span>
+<span class="plus-jakarta text-sm text-on-surface-variant leading-tight">Park conservation &amp; entry fees</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Signature Experience Card -->
+<section class="px-8 max-w-[1440px] mx-auto mb-32">
+<div class="bg-primary text-on-primary rounded-xl overflow-hidden flex flex-col md:flex-row items-center">
+<div class="w-full md:w-1/2 h-[400px]">
+<img alt="Sundowner" class="w-full h-full object-cover" data-alt="A table set for two with drinks in the African bush at sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACBG23L79tqu8GQrVdINHwn4RQgQ9CuW6JbqvwIz5THP66I6UcT5YY9SDn1d-E_2CjayiZp8-eXrkbeSwzEoAPyDvwbrBHmPaIt5olscAOE3IXdgNNV7dY6FSA3nV1lx6dxegTjCDudREjVCXiTlrL7bMRcU_Hs7fFtRsEuOZ5xxIl7El79eIclPWFAHlgdaI2c4Z8NvWuJTvMIERbInkO6NKJ1t4D32qNn00btYsjKUJmG5FLWucJgUXrWHQW748ex8wzSIJk1Q6_"/>
+</div>
+<div class="w-full md:w-1/2 p-12 lg:p-20">
+<span class="plus-jakarta text-xs uppercase tracking-[0.3em] text-on-primary/60 mb-4 block">Signature Moment</span>
+<h3 class="noto-serif text-3xl lg:text-4xl mb-6">The Floating Sundowner</h3>
+<p class="plus-jakarta text-on-primary/80 font-light text-lg mb-8 leading-relaxed">
+                        Rise above the savannah in a private hot-air balloon followed by a champagne breakfast served in the absolute silence of the wilderness. This is where time stands still.
+                    </p>
+<a class="inline-block plus-jakarta font-semibold border-b border-secondary pb-1 hover:text-secondary transition-colors uppercase text-xs tracking-widest" href="#">Inquire about add-ons</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f6f3f2] dark:bg-[#1b1c1c] w-full border-t-0 mt-20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 max-w-7xl mx-auto">
+<div class="md:col-span-1">
+<span class="text-3xl font-serif text-[#17341d] dark:text-[#fcf9f8] mb-6 block">The Elevated Explorer</span>
+<p class="plus-jakarta font-light text-on-surface-variant text-sm">Curating the world's most evocative landscapes for the discerning wanderer.</p>
+</div>
+<div>
+<h5 class="noto-serif font-bold text-primary mb-6">Expeditions</h5>
+<ul class="space-y-3">
+<li><a class="plus-jakarta text-on-surface-variant hover:text-secondary transition-colors text-sm" href="#">Serengeti Soul</a></li>
+<li><a class="plus-jakarta text-on-surface-variant hover:text-secondary transition-colors text-sm" href="#">Amazon Reach</a></li>
+<li><a class="plus-jakarta text-on-surface-variant hover:text-secondary transition-colors text-sm" href="#">Arctic Silence</a></li>
+</ul>
+</div>
+<div>
+<h5 class="noto-serif font-bold text-primary mb-6">Journal</h5>
+<ul class="space-y-3">
+<li><a class="plus-jakarta text-on-surface-variant hover:text-secondary transition-colors text-sm" href="#">Sustainability</a></li>
+<li><a class="plus-jakarta text-on-surface-variant hover:text-secondary transition-colors text-sm" href="#">Conservation</a></li>
+<li><a class="plus-jakarta text-on-surface-variant hover:text-secondary transition-colors text-sm" href="#">Photography</a></li>
+</ul>
+</div>
+<div>
+<h5 class="noto-serif font-bold text-primary mb-6">Connect</h5>
+<ul class="space-y-3">
+<li><a class="plus-jakarta text-on-surface-variant hover:text-secondary transition-colors text-sm" href="#">Contact Us</a></li>
+<li><a class="plus-jakarta text-on-surface-variant hover:text-secondary transition-colors text-sm" href="#">Privacy Policy</a></li>
+<li><a class="plus-jakarta text-on-surface-variant hover:text-secondary transition-colors text-sm" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<div class="px-12 py-8 border-t border-outline-variant/10 text-center">
+<p class="plus-jakarta text-[10px] uppercase tracking-[0.2em] text-on-surface-variant">© 2024 The Elevated Explorer. A Digital Curator Experience.</p>
+</div>
+</footer>
+</body></html>

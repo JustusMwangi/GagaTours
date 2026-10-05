@@ -1,0 +1,15 @@
+# Claude Code
+.claude/
+
+# Secrets
+.env
+.env.local
+.env.production
+admin/backend/.env
+admin/client/.env
+public-site/.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+*:Zone.Identifier

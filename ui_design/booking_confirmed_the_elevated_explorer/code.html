@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Booking Confirmation | The Elevated Explorer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary": "#6a5e33",
+              "surface-tint": "#47664b",
+              "surface-container": "#f0eded",
+              "background": "#fcf9f8",
+              "primary": "#17341d",
+              "on-surface": "#1b1c1c",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-fixed-dim": "#d6c692",
+              "on-error": "#ffffff",
+              "on-secondary-container": "#663500",
+              "secondary": "#904d00",
+              "on-surface-variant": "#424842",
+              "on-secondary-fixed-variant": "#6e3900",
+              "on-error-container": "#93000a",
+              "secondary-fixed": "#ffdcc3",
+              "tertiary-fixed": "#f3e2ac",
+              "on-primary-fixed": "#03210c",
+              "inverse-primary": "#adcfae",
+              "on-tertiary-fixed-variant": "#51461e",
+              "surface-container-highest": "#e4e2e1",
+              "secondary-fixed-dim": "#ffb77d",
+              "surface-dim": "#dcd9d9",
+              "surface-bright": "#fcf9f8",
+              "error-container": "#ffdad6",
+              "surface-container-high": "#eae7e7",
+              "on-secondary-fixed": "#2f1500",
+              "inverse-surface": "#303030",
+              "on-primary-fixed-variant": "#2f4d34",
+              "tertiary-container": "#baaa79",
+              "on-tertiary-container": "#493e17",
+              "inverse-on-surface": "#f3f0ef",
+              "on-background": "#1b1c1c",
+              "on-tertiary-fixed": "#231b00",
+              "outline": "#737971",
+              "primary-container": "#2d4b32",
+              "on-primary-container": "#98ba9a",
+              "primary-fixed": "#c8ecc9",
+              "on-tertiary": "#ffffff",
+              "on-secondary": "#ffffff",
+              "surface-container-low": "#f6f3f2",
+              "on-primary": "#ffffff",
+              "error": "#ba1a1a",
+              "surface-variant": "#e4e2e1",
+              "surface": "#fcf9f8",
+              "outline-variant": "#c2c8bf",
+              "primary-fixed-dim": "#adcfae",
+              "secondary-container": "#fe932c"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 20px 40px rgba(27, 28, 28, 0.06);
+        }
+        .glass-panel {
+            background: rgba(252, 249, 248, 0.8);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body antialiased">
+<!-- Suppressed Navigation for Transactional Focus -->
+<main class="min-h-screen pt-12 pb-24 px-6">
+<div class="max-w-6xl mx-auto">
+<!-- Success Header: Asymmetric Layout -->
+<div class="relative mb-20 md:flex items-center gap-16">
+<div class="md:w-1/2 z-10">
+<div class="mb-4 flex items-center gap-2">
+<span class="w-8 h-[1px] bg-secondary"></span>
+<span class="text-secondary font-label text-sm uppercase tracking-widest">Booking Confirmed</span>
+</div>
+<h1 class="font-headline text-5xl md:text-7xl text-primary leading-tight mb-6">Your expedition <br/><span class="italic font-normal">awaits you.</span></h1>
+<p class="text-on-surface-variant text-lg max-w-md leading-relaxed">
+                        We are thrilled to curate your upcoming journey. Your reservation has been meticulously recorded in our private ledger.
+                    </p>
+<div class="mt-8 flex flex-col sm:flex-row gap-4">
+<div class="bg-surface-container-high px-6 py-4 rounded-xl">
+<span class="block text-xs font-label text-on-surface-variant uppercase tracking-widest mb-1">Reference Number</span>
+<span class="font-headline text-xl text-primary tracking-tight">EE-7742-G9B</span>
+</div>
+</div>
+</div>
+<!-- Hero Imagery: Breaking the Grid -->
+<div class="hidden md:block md:w-1/2 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden editorial-shadow transform rotate-2">
+<img class="w-full h-full object-cover" data-alt="Luxury safari tent overlooking the African savanna at sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3V3ie7KU9TtwexH44VjgPq0y2-2HlmvzEZ_P2NQ_NlWD46iQirbAjMzl38v76UiAzb9FocLnua_IkAOEnugJ-QVWblbce7cKt96OcT4V6NuGresaCn4NLQRhgdpvTQXpYjGZerc5dC4U_N-6s7i5XQs7Faf23ENBXbkHomwv3lH2DKBgu0G-nuGhMNCShej5KzUP957p91t6zUk8i9LVckZe5Z5D4k_EsZ3keUuaTXenX-jd6NN44cVBRS0f7HfPhwRa7vB23t-zu"/>
+</div>
+<div class="absolute -bottom-8 -left-12 aspect-square w-64 rounded-xl overflow-hidden editorial-shadow border-4 border-background transform -rotate-3">
+<img class="w-full h-full object-cover" data-alt="Close up of a magnificent elephant in the wild" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw-ZI6gstcqrHGR8XUvDj1ywpO_gZSBU9ruZX5yFO_3ZmYdToxa3CVez-12OwR4a4u6sQRt6gwIMEq0Rd8CYOmGkLhd2Yl5NZWR7Iuvr6Sz_A8LPOPcAWUGYKazFboUn_BP597NelSbEp1aRu-XVwoR6-pHTh_BhBeA0JU1QqjDUujOmu9cAlJ-a_xd5brRUsPdUKXFfu7s7ZhGzFPsUHs2rZiAwyKV9fUR0AlhSZk4wi-RaYNKTq1IvyXI6DSsqVto87VzS_1_Qo1"/>
+</div>
+</div>
+</div>
+<!-- Bento Grid Summary -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 mb-24">
+<!-- Journey Details -->
+<div class="md:col-span-8 bg-surface-container-low rounded-xl p-10 flex flex-col justify-between">
+<div>
+<h2 class="font-headline text-2xl text-primary mb-8 underline decoration-secondary/30 decoration-2 underline-offset-8">Journey Summary</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-10">
+<div>
+<span class="font-label text-xs uppercase tracking-widest text-secondary mb-2 block">Destination</span>
+<p class="text-xl font-headline text-primary">The Great Serengeti Migration</p>
+<p class="text-on-surface-variant text-sm mt-1">Private Charter &amp; Luxury Lodge Stay</p>
+</div>
+<div>
+<span class="font-label text-xs uppercase tracking-widest text-secondary mb-2 block">Timeline</span>
+<p class="text-xl font-headline text-primary">Oct 14 — Oct 22, 2024</p>
+<p class="text-on-surface-variant text-sm mt-1">9 Days, 8 Nights</p>
+</div>
+<div>
+<span class="font-label text-xs uppercase tracking-widest text-secondary mb-2 block">Guests</span>
+<p class="text-xl font-headline text-primary">2 Explorers</p>
+<p class="text-on-surface-variant text-sm mt-1">Master Suite Accommodation</p>
+</div>
+<div>
+<span class="font-label text-xs uppercase tracking-widest text-secondary mb-2 block">Inclusions</span>
+<ul class="text-sm text-on-surface-variant space-y-1">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[14px]">check</span> Personal Concierge</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[14px]">check</span> All Expeditions</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[14px]">check</span> Culinary Pairing</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="mt-12 pt-8 border-t border-outline-variant/30 flex justify-between items-end">
+<div>
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Investment Total</span>
+<p class="text-3xl font-headline text-primary">$18,450.00</p>
+</div>
+<button class="text-primary font-headline italic hover:text-secondary transition-colors flex items-center gap-2 group">
+                            Download Receipt
+                            <span class="material-symbols-outlined transform group-hover:translate-y-1 transition-transform">download</span>
+</button>
+</div>
+</div>
+<!-- What's Next Column -->
+<div class="md:col-span-4 space-y-6">
+<div class="bg-primary text-on-primary p-8 rounded-xl h-full flex flex-col">
+<h3 class="font-headline text-2xl mb-6">What's Next?</h3>
+<div class="space-y-8 flex-grow">
+<div class="flex gap-4">
+<span class="bg-primary-container text-on-primary-container w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm shrink-0">1</span>
+<div>
+<p class="font-semibold mb-1">Check your inbox</p>
+<p class="text-sm text-on-primary-container/80">A detailed itinerary and pre-departure guide has been sent to your email.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="bg-primary-container text-on-primary-container w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm shrink-0">2</span>
+<div>
+<p class="font-semibold mb-1">Curator Consultation</p>
+<p class="text-sm text-on-primary-container/80">Your dedicated travel curator will call you within 24 hours to tailor your experience.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="bg-primary-container text-on-primary-container w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm shrink-0">3</span>
+<div>
+<p class="font-semibold mb-1">Packing List</p>
+<p class="text-sm text-on-primary-container/80">Start exploring our curated selection of safari essentials.</p>
+</div>
+</div>
+</div>
+<button class="mt-8 bg-secondary text-on-secondary py-3 rounded-xl font-label text-sm uppercase tracking-widest w-full hover:opacity-90 transition-opacity">
+                            View Digital Journal
+                        </button>
+</div>
+</div>
+</div>
+<!-- Footer Action Section -->
+<div class="bg-surface-container rounded-xl p-12 text-center relative overflow-hidden">
+<!-- Abstract Texture Decorative Element -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-secondary-fixed/10 rounded-full blur-3xl -mr-32 -mt-32"></div>
+<h2 class="font-headline text-3xl text-primary mb-4">Sharing the spirit of exploration.</h2>
+<p class="text-on-surface-variant max-w-xl mx-auto mb-10 leading-relaxed">
+                    While we prepare for your arrival, why not explore our latest journal entries on conservation and the heritage of the Serengeti?
+                </p>
+<div class="flex flex-wrap justify-center gap-4">
+<a class="inline-flex items-center gap-2 px-8 py-3 bg-primary text-white rounded-xl font-label text-sm uppercase tracking-widest transition-all hover:shadow-lg" href="#">
+                        Go to Home
+                    </a>
+<a class="inline-flex items-center gap-2 px-8 py-3 border border-primary text-primary rounded-xl font-label text-sm uppercase tracking-widest transition-all hover:bg-primary hover:text-white" href="#">
+                        Explore Journal
+                    </a>
+</div>
+</div>
+</div>
+</main>
+<!-- Shared Footer Component -->
+<footer class="bg-[#f6f3f2] dark:bg-[#141515] w-full rounded-t-none">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 max-w-screen-2xl mx-auto">
+<div class="space-y-6">
+<div class="text-xl font-['Noto_Serif'] text-[#17341d] dark:text-[#fcf9f8]">The Elevated Explorer</div>
+<p class="font-['Plus_Jakarta_Sans'] text-sm leading-relaxed text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60">
+                    Curating high-end expeditions for the modern wanderer. Experiences that linger in the soul.
+                </p>
+</div>
+<div class="md:col-span-2 grid grid-cols-2 sm:grid-cols-3 gap-8">
+<div class="space-y-4">
+<span class="font-label text-xs uppercase tracking-[0.2em] text-[#17341d] font-bold">Discover</span>
+<ul class="space-y-2">
+<li><a class="font-['Plus_Jakarta_Sans'] text-sm text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00]" href="#">Expeditions</a></li>
+<li><a class="font-['Plus_Jakarta_Sans'] text-sm text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00]" href="#">Experience</a></li>
+<li><a class="font-['Plus_Jakarta_Sans'] text-sm text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00]" href="#">Journal</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<span class="font-label text-xs uppercase tracking-[0.2em] text-[#17341d] font-bold">Company</span>
+<ul class="space-y-2">
+<li><a class="font-['Plus_Jakarta_Sans'] text-sm text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00]" href="#">Sustainability</a></li>
+<li><a class="font-['Plus_Jakarta_Sans'] text-sm text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00]" href="#">Newsletter</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<span class="font-label text-xs uppercase tracking-[0.2em] text-[#17341d] font-bold">Legal</span>
+<ul class="space-y-2">
+<li><a class="font-['Plus_Jakarta_Sans'] text-sm text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00]" href="#">Privacy Policy</a></li>
+<li><a class="font-['Plus_Jakarta_Sans'] text-sm text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00]" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<div class="space-y-6">
+<span class="font-label text-xs uppercase tracking-[0.2em] text-[#17341d] font-bold">Newsletter</span>
+<p class="font-['Plus_Jakarta_Sans'] text-xs text-[#1b1c1c]/60 leading-relaxed">Join our inner circle for exclusive stories and early access.</p>
+<div class="flex">
+<input class="bg-surface-container-highest border-none rounded-l-xl px-4 py-3 w-full text-sm focus:ring-1 focus:ring-primary" placeholder="Email Address" type="email"/>
+<button class="bg-primary text-on-primary px-4 py-3 rounded-r-xl">
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="px-12 pb-12 max-w-screen-2xl mx-auto border-t border-outline-variant/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<span class="font-['Plus_Jakarta_Sans'] text-xs text-[#1b1c1c]/40 dark:text-[#fcf9f8]/40">© 2024 The Elevated Explorer. All rights reserved.</span>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-[#17341d]/40 hover:text-[#904d00] cursor-pointer">public</span>
+<span class="material-symbols-outlined text-[#17341d]/40 hover:text-[#904d00] cursor-pointer">potted_plant</span>
+<span class="material-symbols-outlined text-[#17341d]/40 hover:text-[#904d00] cursor-pointer">travel_explore</span>
+</div>
+</div>
+</footer>
+</body></html>

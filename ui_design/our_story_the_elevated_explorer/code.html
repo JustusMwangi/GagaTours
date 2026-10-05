@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Our Story | The Elevated Explorer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary": "#6a5e33",
+              "surface-tint": "#47664b",
+              "surface-container": "#f0eded",
+              "background": "#fcf9f8",
+              "primary": "#17341d",
+              "on-surface": "#1b1c1c",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-fixed-dim": "#d6c692",
+              "on-error": "#ffffff",
+              "on-secondary-container": "#663500",
+              "secondary": "#904d00",
+              "on-surface-variant": "#424842",
+              "on-secondary-fixed-variant": "#6e3900",
+              "on-error-container": "#93000a",
+              "secondary-fixed": "#ffdcc3",
+              "tertiary-fixed": "#f3e2ac",
+              "on-primary-fixed": "#03210c",
+              "inverse-primary": "#adcfae",
+              "on-tertiary-fixed-variant": "#51461e",
+              "surface-container-highest": "#e4e2e1",
+              "secondary-fixed-dim": "#ffb77d",
+              "surface-dim": "#dcd9d9",
+              "surface-bright": "#fcf9f8",
+              "error-container": "#ffdad6",
+              "surface-container-high": "#eae7e7",
+              "on-secondary-fixed": "#2f1500",
+              "inverse-surface": "#303030",
+              "on-primary-fixed-variant": "#2f4d34",
+              "tertiary-container": "#baaa79",
+              "on-tertiary-container": "#493e17",
+              "inverse-on-surface": "#f3f0ef",
+              "on-background": "#1b1c1c",
+              "on-tertiary-fixed": "#231b00",
+              "outline": "#737971",
+              "primary-container": "#2d4b32",
+              "on-primary-container": "#98ba9a",
+              "primary-fixed": "#c8ecc9",
+              "on-tertiary": "#ffffff",
+              "on-secondary": "#ffffff",
+              "surface-container-low": "#f6f3f2",
+              "on-primary": "#ffffff",
+              "error": "#ba1a1a",
+              "surface-variant": "#e4e2e1",
+              "surface": "#fcf9f8",
+              "outline-variant": "#c2c8bf",
+              "primary-fixed-dim": "#adcfae",
+              "secondary-container": "#fe932c"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+        }
+        .glass-panel {
+            background: rgba(252, 249, 248, 0.8);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fcf9f8]/80 dark:bg-[#1b1c1c]/80 backdrop-blur-md">
+<div class="flex justify-between items-center px-8 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-['Noto_Serif'] italic text-[#17341d] dark:text-[#fcf9f8]">The Elevated Explorer</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-[#1b1c1c]/70 dark:text-[#fcf9f8]/70 font-['Plus_Jakarta_Sans'] text-sm uppercase tracking-widest hover:text-[#904d00] transition-colors duration-300" href="#">Destinations</a>
+<a class="text-[#1b1c1c]/70 dark:text-[#fcf9f8]/70 font-['Plus_Jakarta_Sans'] text-sm uppercase tracking-widest hover:text-[#904d00] transition-colors duration-300" href="#">Tours</a>
+<a class="text-[#17341d] dark:text-[#fcf9f8] border-b-2 border-[#904d00] pb-1 font-['Plus_Jakarta_Sans'] text-sm uppercase tracking-widest" href="#">Our Story</a>
+<a class="text-[#1b1c1c]/70 dark:text-[#fcf9f8]/70 font-['Plus_Jakarta_Sans'] text-sm uppercase tracking-widest hover:text-[#904d00] transition-colors duration-300" href="#">Journal</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined text-[#17341d] dark:text-[#fcf9f8] text-2xl" data-icon="account_circle">account_circle</button>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-md font-['Noto_Serif'] font-bold tracking-tight hover:bg-primary-container transition-all active:opacity-80 active:scale-95">
+                    Book Now
+                </button>
+</div>
+</div>
+</nav>
+<main class="pt-32">
+<!-- Hero Section: Editorial Intro -->
+<section class="px-8 max-w-screen-2xl mx-auto mb-32">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
+<div class="lg:col-span-7">
+<span class="font-label text-sm uppercase tracking-[0.2em] text-secondary mb-6 block">Our Genesis</span>
+<h1 class="font-headline text-5xl md:text-7xl lg:text-8xl leading-tight text-primary">
+                        Quiet Luxury <br/>
+<span class="italic font-normal">in the</span> Heart <br/>
+<span class="italic font-normal text-secondary">of the</span> Wild.
+                    </h1>
+</div>
+<div class="lg:col-span-5 pb-4">
+<p class="text-xl leading-relaxed text-on-surface-variant font-light max-w-md">
+                        We believe true luxury isn't found in gold faucets, but in the silence of a desert dawn and the profound connection to the untouched.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Asymmetric Image & Text Block -->
+<section class="mb-40 overflow-hidden">
+<div class="max-w-screen-2xl mx-auto px-8 editorial-grid">
+<div class="col-span-12 lg:col-span-8 relative">
+<div class="aspect-[16/9] rounded-xl overflow-hidden bg-surface-container shadow-2xl">
+<img alt="Luxury safari lodge overlooking a mountain range" class="w-full h-full object-cover" data-alt="Stunning mountain landscape with a minimalist modern lodge interior" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAB704aOG_J5EIiIE1wn0I5yk_hlGhsNaoGpm8c3PArQQ9GNfba4BS07pdXehwmI6xWJVoT2gH7nG9-mlxZqy6FE0HTZnnY_8SOrdu5u3hsczk_Hsyy5wlvYI80WAAFncRb0Et6JdW6xRgqDz6eGbiyqAVdsOT6-DpdD3F2C4lFXrtUMn50G3T8OEGMwl7X9AWtZ3OvXrc-_-99Ou1icQccbvNyv5iaDWIpGiWMO59vH39xPvnFfUMDMg1qHFvuPqTLk9vMFWWwrA5"/>
+</div>
+<div class="absolute -bottom-12 -right-12 hidden lg:block w-72 h-96 rounded-xl overflow-hidden shadow-2xl border-8 border-background">
+<img alt="Close up of a curated travel map and binoculars" class="w-full h-full object-cover" data-alt="Artistic close up of vintage binoculars on a high-end travel journal" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpw58BWba9usBQsAnpCWjquOFxXCPmXGLAnaE19v_duPjs4kBz0TvZfkTkn4yBMa7VoKXtPI3ed4OSVvb8JK_NC-3osgkjp9TTA0KXP4NeK8lmbCLDHrOtNSQlsnnefcBU882UgNkHEGQXvQ4sr6sDyMit5rjzHfGNplH3X828Air6hU3MkaVrv0uZQLiajPd3az23jJJKvmZbpl1aHBwpX9lWWC4EDPlLSyMtWqDjTVUflmtnCwWXEHC0u9Itag6G7EaT7ER2PpT9"/>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-4 lg:pl-12 flex flex-col justify-center mt-16 lg:mt-0">
+<h2 class="font-headline text-4xl text-primary mb-8">The Curators</h2>
+<div class="space-y-6 text-on-surface-variant">
+<p>Founded by Julian and Elena Thorne, The Elevated Explorer was born from a decade of deep immersion in the world's most remote landscapes. They sought to bridge the gap between uncompromising comfort and raw, authentic adventure.</p>
+<p>With backgrounds in conservation biology and luxury hospitality, they curate experiences that honor the earth while pampering the soul.</p>
+<a class="inline-flex items-center gap-2 font-headline italic text-secondary hover:text-primary transition-colors border-b border-secondary/30 pb-1" href="#">
+                            Read Julian &amp; Elena's Letter
+                            <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Philosophy Bento Grid -->
+<section class="bg-surface-container-low py-32">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="text-center mb-20">
+<h2 class="font-headline text-5xl text-primary mb-4">Our Core Philosophy</h2>
+<p class="font-label uppercase tracking-widest text-secondary text-sm">Defined by Intent, Guided by Respect</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Ethical Guiding -->
+<div class="bg-surface-container-lowest p-10 rounded-xl shadow-sm hover:shadow-md transition-shadow group">
+<div class="w-12 h-12 bg-primary-container/10 flex items-center justify-center rounded-lg mb-8 group-hover:bg-primary-container/20 transition-colors">
+<span class="material-symbols-outlined text-primary" data-icon="travel_explore">travel_explore</span>
+</div>
+<h3 class="font-headline text-2xl text-primary mb-4">Ethical Guiding</h3>
+<p class="text-on-surface-variant leading-relaxed">We don't just show you the world; we teach you how to see it. Our guides are local masters, compensated fairly and deeply committed to the sanctity of their homelands.</p>
+</div>
+<!-- Conservation First -->
+<div class="bg-primary text-on-primary p-10 rounded-xl shadow-xl transform md:-translate-y-8">
+<div class="w-12 h-12 bg-white/10 flex items-center justify-center rounded-lg mb-8">
+<span class="material-symbols-outlined text-on-primary" data-icon="eco">eco</span>
+</div>
+<h3 class="font-headline text-2xl mb-4">Conservation First</h3>
+<p class="text-on-primary-container leading-relaxed">Every journey booked contributes 5% of its total value to land restoration projects in our destination regions. We leave every trail better than we found it.</p>
+</div>
+<!-- Quiet Luxury -->
+<div class="bg-surface-container-lowest p-10 rounded-xl shadow-sm hover:shadow-md transition-shadow group">
+<div class="w-12 h-12 bg-secondary-fixed/30 flex items-center justify-center rounded-lg mb-8 group-hover:bg-secondary-fixed/50 transition-colors">
+<span class="material-symbols-outlined text-secondary" data-icon="temp_preferences_custom">temp_preferences_custom</span>
+</div>
+<h3 class="font-headline text-2xl text-primary mb-4">Quiet Luxury</h3>
+<p class="text-on-surface-variant leading-relaxed">No logos, no noise. We focus on the texture of hand-woven linens, the temperature of the perfect vintage, and the absolute privacy of your surroundings.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Immersive Storytelling Section -->
+<section class="py-32 overflow-hidden">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="flex flex-col lg:flex-row gap-20 items-center">
+<div class="lg:w-1/2 relative">
+<div class="relative z-10 rounded-xl overflow-hidden aspect-[4/5] shadow-2xl transform hover:scale-[1.02] transition-transform duration-700">
+<img alt="Wildlife conservation efforts in action" class="w-full h-full object-cover" data-alt="Conservationists working in a lush green valley at sunrise" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfx7PnjhzT2vqhW2iTMCtvP9Uu3bwJV5dT1h_pFs5Rsuk420ZGvaxyk8cUAUjSMCebX6D8G8nGnlWrUmCmH8WDAwAI8IX47bIygtQ1CAkx6ICmqqvtJy6gigwDkmxEwzGtdCJcJasMweDN4_Jor1annX9sKLDOcYTw9h7eOoVpudLxrwvsHHXqRI8SJyQ5HsieMdkh8an8OC4SkqDMfISw4gA2kdxZ7GNmz-irb1YThCsqChewLwmuKnogbZtNV5XvLo4Nstw3U4rH"/>
+<div class="absolute bottom-6 left-6 glass-panel p-6 rounded-lg max-w-xs">
+<span class="font-label text-xs uppercase tracking-widest text-secondary block mb-2">Impact Story</span>
+<p class="text-sm font-headline italic">In 2023, we successfully re-introduced three species of native flora back to the Andean plateaus.</p>
+</div>
+</div>
+<!-- Background Shape -->
+<div class="absolute -top-10 -left-10 w-64 h-64 bg-secondary-fixed/20 rounded-full blur-3xl -z-0"></div>
+</div>
+<div class="lg:w-1/2">
+<h2 class="font-headline text-5xl text-primary mb-10 leading-tight">A Commitment to <br/><span class="italic font-normal">the Unseen.</span></h2>
+<div class="space-y-8">
+<div class="flex gap-6">
+<span class="text-4xl font-headline italic text-outline-variant">01</span>
+<div>
+<h4 class="font-bold text-lg mb-2">Sustainable Logistics</h4>
+<p class="text-on-surface-variant">We utilize solar-powered camps and electric transport wherever terrain permits, ensuring our carbon footprint is as light as a whisper.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="text-4xl font-headline italic text-outline-variant">02</span>
+<div>
+<h4 class="font-bold text-lg mb-2">Community Empowerment</h4>
+<p class="text-on-surface-variant">By partnering exclusively with local family-owned lodges, we ensure that the economic benefits of tourism stay where they are needed most.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="text-4xl font-headline italic text-outline-variant">03</span>
+<div>
+<h4 class="font-bold text-lg mb-2">Radical Transparency</h4>
+<p class="text-on-surface-variant">Our guests receive a full impact report at the end of every expedition, detailing exactly where their conservation contribution was spent.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter CTA -->
+<section class="max-w-screen-xl mx-auto px-8 mb-32">
+<div class="bg-surface-container rounded-3xl p-12 md:p-20 text-center relative overflow-hidden">
+<div class="relative z-10">
+<h2 class="font-headline text-4xl md:text-5xl text-primary mb-6">Join the Inner Circle</h2>
+<p class="text-on-surface-variant max-w-xl mx-auto mb-10 text-lg">Subscribe to our monthly digest of rare destination sightings, conservation updates, and exclusive expeditions.</p>
+<form class="flex flex-col md:flex-row gap-4 max-w-md mx-auto">
+<input class="flex-grow bg-surface-container-lowest border-none rounded-md px-6 py-3 focus:ring-2 focus:ring-primary/20 placeholder:text-outline-variant" placeholder="Email Address" type="email"/>
+<button class="bg-secondary text-on-secondary px-8 py-3 rounded-md font-headline font-bold hover:bg-on-secondary-container transition-colors">Subscribe</button>
+</form>
+</div>
+<!-- Abstract Grain Pattern -->
+<div class="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/felt.png')]"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f6f3f2] dark:bg-[#141515]">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 max-w-screen-2xl mx-auto">
+<div class="md:col-span-1">
+<div class="text-xl font-['Noto_Serif'] text-[#17341d] dark:text-[#fcf9f8] mb-6 uppercase tracking-wider">The Elevated Explorer</div>
+<p class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 font-['Plus_Jakarta_Sans'] text-sm leading-relaxed">Curating profound encounters between the sophisticated traveler and the wild heart of our planet.</p>
+</div>
+<div>
+<h4 class="font-headline font-bold text-primary mb-6">Expeditions</h4>
+<ul class="space-y-4 font-['Plus_Jakarta_Sans'] text-sm">
+<li><a class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00]" href="#">African Savanna</a></li>
+<li><a class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00]" href="#">Arctic Frontiers</a></li>
+<li><a class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00]" href="#">Amazon Basin</a></li>
+<li><a class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00]" href="#">Himalayan Heights</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline font-bold text-primary mb-6">Experience</h4>
+<ul class="space-y-4 font-['Plus_Jakarta_Sans'] text-sm">
+<li><a class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00]" href="#">Bespoke Journeys</a></li>
+<li><a class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00]" href="#">Our Commitment</a></li>
+<li><a class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00]" href="#">Journal</a></li>
+<li><a class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00]" href="#">Gallery</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline font-bold text-primary mb-6">Connect</h4>
+<ul class="space-y-4 font-['Plus_Jakarta_Sans'] text-sm">
+<li><a class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00]" href="#">Instagram</a></li>
+<li><a class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00]" href="#">Newsletter</a></li>
+<li><a class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 hover:text-[#17341d] dark:hover:text-[#fcf9f8] underline decoration-[#904d00]" href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="px-12 py-10 max-w-screen-2xl mx-auto border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60 font-['Plus_Jakarta_Sans'] text-xs">© 2024 The Elevated Explorer. All rights reserved.</p>
+<div class="flex gap-8 text-xs font-['Plus_Jakarta_Sans'] text-[#1b1c1c]/60 dark:text-[#fcf9f8]/60">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>
